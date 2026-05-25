@@ -307,6 +307,8 @@ h3 {
 }
 
 .fast-answer,
+.video-panel,
+.visual-routes,
 .toc-card,
 .player-goals,
 .content-band,
@@ -317,6 +319,125 @@ h3 {
 .wiki-categories,
 .action-steps {
   margin-top: 48px;
+}
+
+.section-heading-row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.7fr);
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.section-heading-row > p {
+  margin: 0;
+  color: #2d2a23;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.video-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(360px, 1.15fr);
+  gap: 24px;
+  align-items: center;
+  border: 2px solid #171717;
+  border-radius: 16px;
+  background: #fff4d6;
+  box-shadow: var(--shadow-pixel);
+  padding: 24px;
+}
+
+.video-copy p:not(.eyebrow) {
+  color: #2d2a23;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.video-frame {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #171717;
+  border-radius: 12px;
+  background: #000;
+  box-shadow: var(--shadow-pixel);
+  aspect-ratio: 16 / 9;
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.visual-routes {
+  border: 2px solid #171717;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow-pixel);
+  padding: 24px;
+}
+
+.visual-route-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.visual-route-card {
+  overflow: hidden;
+  display: grid;
+  border: 2px solid #171717;
+  border-radius: 12px;
+  background: #fff8dc;
+  box-shadow: var(--shadow-pixel);
+}
+
+.visual-route-card:nth-child(3n + 2) {
+  background: #d2fae5;
+}
+
+.visual-route-card:nth-child(3n + 3) {
+  background: #fae9ff;
+}
+
+.visual-route-image {
+  position: relative;
+  min-height: 160px;
+  border-bottom: 2px solid #171717;
+  background: #171717;
+}
+
+.visual-route-image img {
+  object-fit: cover;
+}
+
+.visual-route-card div:last-child {
+  display: grid;
+  gap: 9px;
+  padding: 16px;
+}
+
+.visual-route-card span {
+  width: fit-content;
+  border: 1px solid #171717;
+  border-radius: 100px;
+  background: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.visual-route-card p {
+  margin: 0;
+  color: #2d2a23;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.4;
 }
 
 .fast-answer {
@@ -951,6 +1072,8 @@ tr:last-child td {
   .pixel-hero,
   .article-grid,
   .fast-answer,
+  .video-panel,
+  .section-heading-row,
   .footer-grid {
     grid-template-columns: 1fr;
   }
@@ -979,6 +1102,7 @@ tr:last-child td {
   .faq-grid,
   .guide-card-grid,
   .source-panel-grid,
+  .visual-route-grid,
   .action-steps ol {
     grid-template-columns: 1fr;
   }

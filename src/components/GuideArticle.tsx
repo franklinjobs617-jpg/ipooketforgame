@@ -11,6 +11,8 @@ import { ActionSteps } from "@/components/ActionSteps";
 import { PlayerGoalGrid } from "@/components/PlayerGoalGrid";
 import { SourcePanel } from "@/components/SourcePanel";
 import { TableOfContents } from "@/components/TableOfContents";
+import { VideoPanel } from "@/components/VideoPanel";
+import { VisualGuideRoutes } from "@/components/VisualGuideRoutes";
 import Link from "next/link";
 import { getGuideBySlug, getGuidePath } from "@/lib/guides";
 
@@ -23,7 +25,9 @@ export function GuideArticle({ guide }: { guide: GuideBrief }) {
         <Breadcrumbs guide={guide} />
         <PixelHero guide={guide} />
         <FastAnswerBox guide={guide} />
+        {!guide.slug ? <VideoPanel /> : null}
         <TableOfContents guide={guide} />
+        <VisualGuideRoutes guide={guide} />
         {!guide.slug ? <PlayerGoalGrid /> : null}
         {!guide.slug ? <WikiCategoryGrid /> : null}
 
