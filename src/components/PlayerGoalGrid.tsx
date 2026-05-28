@@ -27,9 +27,9 @@ const playerGoals = [
     action: "Pick blessings around your current settlement problem.",
   },
   {
-    label: "Should I buy it?",
-    href: "/is-it-worth-it",
-    action: "Compare buy-now, demo-first, wait, and co-op value.",
+    label: "Is the build ready?",
+    href: "/release-date",
+    action: "Check Steam status, patch notes, platform limits, and Early Access risk.",
   },
 ];
 

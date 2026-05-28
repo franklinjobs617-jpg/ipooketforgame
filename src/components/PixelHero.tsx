@@ -7,13 +7,14 @@ export function PixelHero({ guide }: { guide: GuideBrief }) {
   return (
     <section className="pixel-hero">
       <div className="hero-copy">
-        <p className="eyebrow">Romestead Early Access Guide</p>
+        <p className="eyebrow">Romestead Live Early Access Guide</p>
         <h1>{guide.h1}</h1>
         <p>{guide.intro}</p>
+
         <div className="hero-actions">
           <PixelButton href="/beginner-guide">Read beginner guide</PixelButton>
-          <PixelButton href="/base-building" variant="ghost">
-            Plan a base
+          <PixelButton href="/release-date" variant="ghost">
+            Check current build
           </PixelButton>
         </div>
         <div className="resource-row" aria-label="Guide topics">

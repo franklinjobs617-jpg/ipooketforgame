@@ -9,8 +9,9 @@ export function SourcePanel() {
         <div>
           <h3>Use confirmed sources first</h3>
           <p>
-            Release status, player count, platform support, and system requirements are checked
-            against the official site and Steam page before stronger claims are made.
+            Release status, player count, platform support, hotfix notes, and system
+            requirements are checked against the official site and Steam page before stronger
+            claims are made.
           </p>
         </div>
         <div>

@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: "Ipooket",
   url: "https://ipooket.com",
   description:
-    "Romestead guide hub for Early Access players: release date, co-op, beginner tips, base building, farming, survivors, gods, and PC setup.",
+    "Romestead Early Access guide hub for new players: start routes, co-op setup, base building, farming, survivors, gods, PC setup, and live build checks.",
   author: "Ipooket Guides",
   game: {
     name: "Romestead",

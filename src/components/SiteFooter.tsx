@@ -9,8 +9,8 @@ export function SiteFooter() {
         <div>
           <p className="footer-brand">Ipooket Romestead Guide</p>
           <p className="footer-copy">
-            Player-first Romestead guides for Early Access settlement builders, co-op groups,
-            and cautious buyers.
+            Player-first Romestead guides for live Early Access settlement builders, co-op
+            groups, and cautious buyers.
           </p>
         </div>
         <div className="footer-links">

@@ -40,7 +40,7 @@ export interface GuideBrief {
   relatedSlugs: string[];
 }
 
-const updatedAt = "2026-05-25";
+const updatedAt = "2026-05-28";
 
 export const guideBriefs: GuideBrief[] = [
   {
@@ -55,67 +55,61 @@ export const guideBriefs: GuideBrief[] = [
     ],
     title: "Romestead Guide Hub: Beginner Tips, Co-op and Base Building",
     metaDescription:
-      "Romestead guide hub for Early Access players: release date, co-op, beginner tips, base building, farming, survivors, gods, and PC setup.",
+      "Romestead Early Access guide hub for new players: start routes, co-op setup, base building, farming, survivors, gods, PC setup, and live build checks.",
     h1: "Romestead Guide Hub",
     searchIntent:
-      "Players want a central Romestead wiki-style hub that quickly points them to release facts, co-op setup, first-day priorities, and settlement systems.",
+      "Players want a central Romestead wiki-style hub that quickly points them to current launch status, co-op setup, first-day priorities, and settlement systems.",
     status: "Early Access",
     updatedAt,
     fastAnswer:
       "Romestead is a PC Steam Early Access survival town-building game about rebuilding Rome with gathering, crafting, farming, survivor jobs, gods, dungeons, and 1-8 player co-op.",
     intro:
-      "Use this hub to pick the right Romestead guide before starting a settlement. The first wave focuses on confirmed store facts and cautious launch-window advice, so you can avoid unsupported claims while Early Access systems are still changing.",
+      "Use this hub to pick the right Romestead route after the Early Access launch. The focus is current store facts, first-session decisions, and cautious build advice so you can keep playing without relying on unsupported final-meta claims.",
     playerNote:
       "Facts are based on the official Romestead site and Steam store page, with Early Access details treated as changeable.",
     updateCaution:
       "This hub does not present final builds, final layouts, or exact late-game systems as settled while the game is in Early Access.",
     image: "/images/romestead/screenshot-01.webp",
-    imageAlt: "Romestead official screenshot showing a Roman-inspired settlement and farming area",
+    imageAlt:
+      "Romestead official screenshot showing a Roman-inspired settlement and farming area",
     imageCaption:
       "Official Romestead screenshots show why the site is organized like a wiki: settlement planning, resource loops, co-op tasks, and adventure systems all connect.",
     actionSteps: [
-      "Check release and platform status before buying.",
-      "Read the beginner guide before starting a first settlement.",
+      "Check the current Steam build, patch notes, and platform status before planning a long save.",
+      "Use the run planner or beginner guide before starting a first settlement.",
       "Use base building, farming, and survivors pages together because those systems support each other.",
-      "Treat gods, best layouts, and Steam Deck advice as launch-window guidance until more player data is stable.",
+      "Treat gods, best layouts, and Steam Deck advice as live Early Access guidance until more player data is stable.",
     ],
     sections: [
       {
         heading: "Start With the Right Guide",
-        body:
-          "Romestead mixes survival crafting, colony planning, co-op roles, Roman god blessings, and dungeon pressure. Start with release and beginner pages if you have not played yet, then move into layout, farming, survivors, and blessings once your settlement is stable.",
+        body: "Romestead mixes survival crafting, colony planning, co-op roles, Roman god blessings, and dungeon pressure. Start with the current build check and beginner route if you have not played yet, then move into layout, farming, survivors, and blessings once your settlement is stable.",
       },
       {
         heading: "What Makes Romestead Different",
-        body:
-          "The hook is not only building a base. You are rebuilding a Roman-inspired settlement, assigning survivors to useful work, defending against night pressure, and pushing outward into biomes and dungeons when the town can support the risk.",
+        body: "The hook is not only building a base. You are rebuilding a Roman-inspired settlement, assigning survivors to useful work, defending against night pressure, and pushing outward into biomes and dungeons when the town can support the risk.",
       },
       {
         heading: "How the Site Is Connected",
-        body:
-          "The guide structure follows the way a player actually learns Romestead. Release and worth-it pages answer whether to play, beginner and co-op pages answer how to start, then base building, farming, survivors, and blessings explain the systems that keep a settlement alive.",
+        body: "The guide structure follows the way a player actually learns Romestead. Release and worth-it pages answer whether the current build fits you, beginner and co-op pages answer how to start, then base building, farming, survivors, and blessings explain the systems that keep a settlement alive.",
       },
       {
         heading: "Pick Your Next Problem",
-        body:
-          "Use the system cards to move from a screenshot or item you recognize into a practical guide. If enemies are pressuring the town, start with beginner defense. If crafting is blocked, go to base building and resources. If a fight feels risky, check blessings and preparation first.",
+        body: "Use the system cards to move from a screenshot or item you recognize into a practical guide. If enemies are pressuring the town, start with beginner defense. If crafting is blocked, go to base building and resources. If a fight feels risky, check blessings and preparation first.",
       },
       {
         heading: "How to Use the Wiki Cards",
-        body:
-          "Each card is a shortcut to a player problem. Resources and Crafting point toward base-building and farming decisions, Bosses and Weapons point toward preparation, and Survivors point toward jobs, food, and town upkeep. Start with the card that matches what stopped your last run.",
+        body: "Each card is a shortcut to a player problem. Resources and Crafting point toward base-building and farming decisions, Bosses and Weapons point toward preparation, and Survivors point toward jobs, food, and town upkeep. Start with the card that matches what stopped your last run.",
       },
       {
         heading: "When to Stay on This Hub",
-        body:
-          "Stay on the hub if you are still deciding what kind of Romestead player you are: solo builder, co-op organizer, farming planner, boss hunter, or cautious Early Access buyer. Move into a guide once you know the problem you want solved.",
+        body: "Stay on the hub if you are still deciding what kind of Romestead player you are: solo builder, co-op organizer, farming planner, boss hunter, or cautious Early Access buyer. Use the planner to choose a short next-session route, then move into the guide that matches the problem you want solved.",
       },
       {
         heading: "What to Do After You Land Here",
-        body:
-          "If you came from search and are not sure where to start, make one decision first: are you buying, learning, building, organizing co-op, or fixing a settlement problem? That single choice should decide your next click, not a long list of disconnected wiki terms.",
+        body: "If you came from search and are not sure where to start, make one decision first: are you buying, learning, building, organizing co-op, or fixing a settlement problem? That single choice should decide your next click, not a long list of disconnected wiki terms.",
         bullets: [
-          "Buying decision: open Release Date, System Requirements, and Is It Worth It.",
+          "Buying decision: open Current Release Status, System Requirements, and Is It Worth It.",
           "First save: open Beginner Guide, then Base Building and Farming.",
           "Group save: open Multiplayer Co-op before anyone starts building randomly.",
           "Stalled town: open Survivors, Farming, or Gods and Blessings based on the bottleneck.",
@@ -123,8 +117,7 @@ export const guideBriefs: GuideBrief[] = [
       },
       {
         heading: "How This Hub Avoids Bad Early Access Advice",
-        body:
-          "Romestead is an Early Access game, so the useful answer is often a framework rather than a final meta. This hub separates confirmed facts from test-needed advice: player count, platform status, and broad systems are treated differently from best blessings, final layouts, exact recipes, and late-game performance.",
+        body: "Romestead is an Early Access game, so the useful answer is often a framework rather than a final meta. This hub separates confirmed facts from test-needed advice: player count, platform status, and broad systems are treated differently from best blessings, final layouts, exact recipes, and late-game performance.",
       },
     ],
     tables: [
@@ -132,21 +125,49 @@ export const guideBriefs: GuideBrief[] = [
         title: "Romestead Quick Answers",
         columns: ["Question", "Best current answer", "Where to go next"],
         rows: [
-          ["Is it out?", "Steam lists a May 25/26, 2026 Early Access launch window depending on timezone.", "Release Date"],
-          ["Can I play co-op?", "Official information lists 1-8 players with Online Co-op and LAN Co-op.", "Multiplayer Co-op"],
-          ["What should I do first?", "Gather food and resources, build core workstations, and keep the first settlement compact.", "Beginner Guide"],
-          ["Is Steam Deck safe?", "Treat Steam Deck support as a launch test item until player reports are stable.", "Steam Deck"],
+          [
+            "Is it out?",
+            "Yes. Romestead is available now on Steam Early Access for PC; date labels can still vary by timezone.",
+            "Current Status",
+          ],
+          [
+            "Can I play co-op?",
+            "Official information lists 1-8 players with Online Co-op and LAN Co-op.",
+            "Multiplayer Co-op",
+          ],
+          [
+            "What should I do first?",
+            "Gather food and resources, build core workstations, and keep the first settlement compact.",
+            "Beginner Guide",
+          ],
+          [
+            "Is Steam Deck safe?",
+            "Treat Steam Deck comfort as a current-build test item until compatibility reports are stable.",
+            "Steam Deck",
+          ],
         ],
       },
       {
         title: "Choose the Right Romestead Guide",
         columns: ["If your problem is", "Start with", "Then read"],
         rows: [
-          ["I do not know whether to buy", "Release Date", "Is It Worth It"],
-          ["My first settlement keeps stalling", "Beginner Guide", "Base Building"],
+          ["I do not know whether to buy", "Current Status", "Is It Worth It"],
+          [
+            "My first settlement keeps stalling",
+            "Beginner Guide",
+            "Base Building",
+          ],
           ["Food or workers are slowing progress", "Farming", "Survivors"],
-          ["My co-op group is disorganized", "Multiplayer Co-op", "Best Base Layout"],
-          ["I want stronger combat direction", "Gods and Blessings", "Beginner Guide"],
+          [
+            "My co-op group is disorganized",
+            "Multiplayer Co-op",
+            "Best Base Layout",
+          ],
+          [
+            "I want stronger combat direction",
+            "Gods and Blessings",
+            "Beginner Guide",
+          ],
         ],
       },
     ],
@@ -187,81 +208,75 @@ export const guideBriefs: GuideBrief[] = [
     secondaryKeywords: [
       "Romestead Early Access",
       "Romestead Steam",
-      "Romestead demo",
+      "Romestead launch",
       "Romestead console",
     ],
-    title: "Romestead Release Date, Early Access & Console",
+    title: "Romestead Release Date, Early Access Status and Console",
     metaDescription:
-      "Romestead release date guide covering Steam Early Access, PC status, demo checks, console status, and what to verify before launch.",
+      "Romestead release date guide covering Steam Early Access availability, PC status, console status, and what to verify in the current launch build.",
     h1: "Romestead Release Date and Early Access",
     searchIntent:
-      "Players want to know when Romestead is available, whether it is Early Access, where to play, and whether console or demo options are confirmed.",
+      "Players want to know whether Romestead is available now, whether it is Early Access, where to play, and whether console options are confirmed.",
     status: "Confirmed",
     updatedAt,
     fastAnswer:
-      "Romestead is listed for PC on Steam with a May 25/26, 2026 Early Access launch window depending on timezone. Console versions are not confirmed by current official store information.",
+      "Romestead is available now on PC through Steam Early Access. Steam and launch announcements point to a May 26, 2026 release window, while some regions may show May 25 because of timezone differences. Console versions are not confirmed by current official store information.",
     intro:
-      "This page keeps release facts separate from launch assumptions. Use it to check the Steam date, Early Access status, demo availability, platform support, and what still needs confirmation after unlock.",
+      "This page keeps release facts separate from launch assumptions. Use it to check Steam availability, Early Access status, platform support, and what still needs current-build verification after launch.",
     playerNote:
-      "Release and platform claims should be checked against Steam and the official site before publication updates.",
+      "Release and platform claims are checked against Steam, official announcements, and the official site before stronger recommendations are made.",
     updateCaution:
-      "Do not promise a console version, final 1.0 content, or permanent demo access unless an official source confirms it.",
+      "Do not promise a console version, final 1.0 content, temporary store features, or stable launch-build behavior unless an official source confirms it.",
     image: "/images/romestead/screenshot-02.webp",
-    imageAlt: "Romestead official screenshot for Early Access release and platform status",
+    imageAlt:
+      "Romestead official screenshot for Early Access release and platform status",
     imageCaption:
-      "Release pages should answer practical buying questions first: Steam access, Early Access risk, demo checks, console status, and what to verify before a group run.",
+      "Release pages should answer practical player questions first: Steam access, Early Access risk, console status, patch notes, and what to verify before a group run.",
     actionSteps: [
-      "Open the current Steam page and confirm the buy or demo button for your region.",
-      "Check recent update notes because Early Access builds can change quickly.",
+      "Open the current Steam page and confirm the purchase button and launch build in your region.",
+      "Check recent update notes because Early Access hotfixes can change quickly.",
       "Confirm your group is playing on PC before planning co-op.",
       "Use the worth-it page if your decision depends on polish, reviews, or Steam Deck support.",
     ],
     sections: [
       {
         heading: "Current Release Status",
-        body:
-          "Romestead is presented as a Steam Early Access PC game. Early Access matters because the available content, balance, and polish can change before the full release.",
+        body: "Romestead is now a Steam Early Access PC game, not a future launch page. Early Access matters because available content, balance, performance, and polish can still change before the full release.",
       },
       {
-        heading: "What to Check Before Buying",
-        body:
-          "Check the Steam buy button in your region, read recent update notes, confirm whether a demo is available, and make sure your group is comfortable with an in-development survival town builder.",
+        heading: "What to Check Before a Long Save",
+        body: "Check the Steam page in your region, read the newest update notes, and make sure your group is comfortable with an in-development survival town builder before committing to a long settlement.",
       },
       {
         heading: "Why Release Status Affects Every Other Guide",
-        body:
-          "Early Access status changes how every page should be read. A base layout, blessing pick, farming loop, or Steam Deck setting can be useful today and need revision after a patch. The release page is the anchor for those update checks.",
+        body: "Early Access status changes how every page should be read. A base layout, blessing pick, farming loop, or Steam Deck setting can be useful today and need revision after a patch. The release page is the anchor for those update checks.",
       },
       {
         heading: "Platform Questions to Keep Separate",
-        body:
-          "PC Steam is the confirmed public path. Console, crossplay, and handheld comfort should stay separate from the core release answer so players do not confuse a future purchase with a verified platform.",
+        body: "PC Steam is the confirmed public path. Console, crossplay, and handheld comfort should stay separate from the core release answer so players do not confuse a future purchase with a verified platform.",
       },
       {
-        heading: "Launch-Day Checklist",
-        body:
-          "Before planning a long save, check the Steam store button, the latest announcement, current demo access, and whether your group is all on PC. Do this on launch day rather than relying on older article dates, because store availability can change by region and timezone.",
+        heading: "Launch Build Checklist",
+        body: "Before planning a long save, check the Steam store button, the latest announcement, current known issues, and whether your group is all on PC. Do this with the current build rather than relying on older article dates, because Early Access fixes can land quickly.",
         bullets: [
-          "Confirm the Steam buy, demo, or wishlist button in your own region.",
-          "Check whether the latest update notes mention launch timing or known issues.",
+          "Confirm the Steam purchase or install button in your own region.",
+          "Check whether the latest update notes mention hotfixes or known issues.",
           "If you play co-op, confirm everyone owns or can access the same PC build.",
-          "If you only play handheld, read the Steam Deck page before buying.",
+          "If you only play handheld, read the Steam Deck page before committing to the current build.",
         ],
       },
       {
         heading: "What Not to Assume From the Release Date",
-        body:
-          "A release date does not confirm console ports, crossplay, Steam Deck comfort, final balance, or full 1.0 content. Treat those as separate decisions. The release page should answer where and when you can play, while other pages explain whether the current build fits your setup.",
+        body: "A release date does not confirm console ports, crossplay, Steam Deck comfort, final balance, or full 1.0 content. Treat those as separate decisions. The release page should answer where and when you can play, while other pages explain whether the current build fits your setup.",
       },
       {
-        heading: "What to Do After the Store Unlocks",
-        body:
-          "Once the Steam page changes from wishlist or demo access to purchase access, do not jump straight into a long co-op world. Confirm the build notes, install size, graphics options, multiplayer menu, and save behavior first. That short check prevents a group from building around assumptions that change after the first patch.",
+        heading: "What to Do After Installing",
+        body: "Do not jump straight into a long co-op world. Confirm the build notes, install size, graphics options, multiplayer menu, and save behavior first. That short check prevents a group from building around assumptions that change after the first patch.",
         bullets: [
           "Solo players should verify controls, text readability, and performance before committing to a long save.",
           "Co-op groups should create a short test world before choosing roles or a permanent host.",
           "Handheld players should check the Steam Deck page before treating the launch build as comfortable.",
-          "Buyers on the fence should read the worth-it page after early player reviews appear.",
+          "Buyers on the fence should read the worth-it page alongside current player reviews.",
         ],
         links: ["multiplayer-coop", "steam-deck", "is-it-worth-it"],
       },
@@ -271,31 +286,75 @@ export const guideBriefs: GuideBrief[] = [
         title: "Release and Platform Status",
         columns: ["Item", "Current status", "Player note"],
         rows: [
-          ["Steam PC", "Confirmed", "Use Steam as the main purchase and update source."],
-          ["Early Access", "Confirmed", "Expect changes during development."],
-          ["Demo", "Needs checking", "Demo availability can change around launch."],
-          ["Xbox / PlayStation", "Not confirmed", "Do not plan around console support yet."],
+          [
+            "Steam PC",
+            "Available now",
+            "Use Steam as the main purchase, install, and update source.",
+          ],
+          ["Early Access", "Live", "Expect changes during development."],
+          [
+            "Launch build",
+            "Needs current checks",
+            "Read the latest hotfix notes before a long co-op save.",
+          ],
+          [
+            "Xbox / PlayStation",
+            "Not confirmed",
+            "Do not plan around console support yet.",
+          ],
           ["Full 1.0", "Not released", "Wait if you need a finished game."],
         ],
       },
       {
-        title: "Why Steam Shows Different Dates",
-        columns: ["Date shown", "Why it can differ", "What players should do"],
+        title: "Launch Status Notes",
+        columns: ["Item", "Why it matters", "What players should do"],
         rows: [
-          ["May 25/26, 2026", "Steam unlock timing can appear differently by timezone.", "Check the Steam page in your own region before planning a session."],
-          ["UTC unlock window", "A global launch can cross midnight for some players.", "Treat the UTC time as a reference, not your local clock."],
-          ["Demo or buy button", "Store buttons can change around Early Access launch.", "Use the visible Steam button as the final availability signal."],
-          ["Console dates", "No Xbox or PlayStation version is confirmed.", "Do not plan a console purchase until an official page appears."],
+          [
+            "May 25/26, 2026",
+            "Steam and announcement dates can appear differently by timezone.",
+            "Treat Steam in your own region as the availability source.",
+          ],
+          [
+            "Early hotfixes",
+            "Launch-window patches can affect networking, controls, balance, or performance.",
+            "Check news before hosting a group session.",
+          ],
+          [
+            "Purchase button",
+            "The visible Steam button is now more useful than old launch countdown wording.",
+            "Use the store page as the final availability signal.",
+          ],
+          [
+            "Console dates",
+            "No Xbox or PlayStation version is confirmed.",
+            "Do not plan a console purchase until an official page appears.",
+          ],
         ],
       },
       {
-        title: "After-Unlock Check",
+        title: "Current Build Check",
         columns: ["Check", "Why it matters", "Next page"],
         rows: [
-          ["Can you buy or install it?", "Confirms the game is available in your region.", "System Requirements"],
-          ["Does a demo still exist?", "Helps cautious players test before buying.", "Is It Worth It"],
-          ["Does co-op connect cleanly?", "Prevents a group from losing time on a bad host setup.", "Multiplayer Co-op"],
-          ["Does it feel readable on handheld?", "Steam Deck comfort depends on controls and UI, not only launch status.", "Steam Deck"],
+          [
+            "Can you install and run it?",
+            "Confirms the game is available and stable enough on your PC.",
+            "System Requirements",
+          ],
+          [
+            "Do current reviews match your tolerance?",
+            "Helps cautious players judge Early Access rough edges.",
+            "Is It Worth It",
+          ],
+          [
+            "Does co-op connect cleanly?",
+            "Prevents a group from losing time on a bad host setup.",
+            "Multiplayer Co-op",
+          ],
+          [
+            "Does it feel readable on handheld?",
+            "Steam Deck comfort depends on controls and UI, not only launch status.",
+            "Steam Deck",
+          ],
         ],
       },
     ],
@@ -303,7 +362,7 @@ export const guideBriefs: GuideBrief[] = [
       {
         question: "What is the Romestead release date?",
         answer:
-          "Romestead is listed for a May 25/26, 2026 Steam Early Access launch window on PC, depending on timezone.",
+          "Romestead launched into Steam Early Access for PC around May 26, 2026, with some timezone displays potentially showing May 25.",
       },
       {
         question: "Is Romestead Early Access?",
@@ -316,12 +375,17 @@ export const guideBriefs: GuideBrief[] = [
           "Xbox and PlayStation versions are not confirmed by current official store information.",
       },
       {
-        question: "Does Romestead have a demo?",
+        question: "What should I check after installing Romestead?",
         answer:
-          "Demo availability should be checked directly on Steam because store options can change around release.",
+          "Check patch notes, graphics options, controls, multiplayer connection, save behavior, and performance before committing to a long settlement.",
       },
     ],
-    relatedSlugs: ["", "beginner-guide", "system-requirements", "is-it-worth-it"],
+    relatedSlugs: [
+      "",
+      "beginner-guide",
+      "system-requirements",
+      "is-it-worth-it",
+    ],
   },
   {
     slug: "beginner-guide",
@@ -349,7 +413,8 @@ export const guideBriefs: GuideBrief[] = [
     updateCaution:
       "Exact recipes, costs, and strongest routes can change during Early Access.",
     image: "/images/romestead/screenshot-03.webp",
-    imageAlt: "Romestead official screenshot showing early settlement building and survival planning",
+    imageAlt:
+      "Romestead official screenshot showing early settlement building and survival planning",
     imageCaption:
       "The safest first run is practical: gather close resources, build a compact core, then expand once food and defense are stable.",
     actionSteps: [
@@ -361,8 +426,7 @@ export const guideBriefs: GuideBrief[] = [
     sections: [
       {
         heading: "First-Day Priorities",
-        body:
-          "Start close to home. Collect basic materials, identify food sources, build the first useful stations, and keep your settlement readable before adding distant structures.",
+        body: "Start close to home. Collect basic materials, identify food sources, build the first useful stations, and keep your settlement readable before adding distant structures.",
         bullets: [
           "Gather wood, stone, and food before long exploration.",
           "Build stations that unlock storage, tools, and cooking.",
@@ -372,35 +436,29 @@ export const guideBriefs: GuideBrief[] = [
       },
       {
         heading: "Avoid Early Overextension",
-        body:
-          "The fastest way to weaken a settlement is to spread work across too many directions. Explore when the base has enough supplies to recover from a bad trip.",
+        body: "The fastest way to weaken a settlement is to spread work across too many directions. Explore when the base has enough supplies to recover from a bad trip.",
       },
       {
         heading: "Beginner Route Through the Site",
-        body:
-          "After this page, read base building for layout, farming for food stability, survivors for job planning, and gods blessings for cautious build direction. Those four pages form the practical first-settlement path.",
+        body: "After this page, read base building for layout, farming for food stability, survivors for job planning, and gods blessings for cautious build direction. Those four pages form the practical first-settlement path.",
       },
       {
         heading: "What Not to Optimize Too Early",
-        body:
-          "Do not chase a perfect blessing, weapon, or endgame layout before your town has food, storage, and defense. In survival builders, early fundamentals usually matter more than an unverified meta route.",
+        body: "Do not chase a perfect blessing, weapon, or endgame layout before your town has food, storage, and defense. In survival builders, early fundamentals usually matter more than an unverified meta route.",
       },
       {
         heading: "Early Resources to Understand",
-        body:
-          "The Romestead wiki describes resources as building inputs that can also become materials for item crafting. Stone, lumber, clay, flint shards, and wood sticks matter because they feed tools, workstations, storage, and the first reliable town loop.",
+        body: "The Romestead wiki describes resources as building inputs that can also become materials for item crafting. Stone, lumber, clay, flint shards, and wood sticks matter because they feed tools, workstations, storage, and the first reliable town loop.",
         links: ["base-building", "farming"],
       },
       {
         heading: "When to Automate Resources",
-        body:
-          "Manual gathering is fine at the start, but the wiki notes that many resources can later be automated with a matching building, an assigned worker, logistics movement, and material storage. Automate the resource you keep running out of first.",
+        body: "Manual gathering is fine at the start, but the wiki notes that many resources can later be automated with a matching building, an assigned worker, logistics movement, and material storage. Automate the resource you keep running out of first.",
         links: ["survivors", "base-building"],
       },
       {
         heading: "First Hour Route",
-        body:
-          "A safe first hour should feel boring in a good way: gather close materials, make storage readable, build only what supports the next job, and return before a risky trip becomes expensive. Do not measure progress by distance explored; measure it by whether the town can recover.",
+        body: "A safe first hour should feel boring in a good way: gather close materials, make storage readable, build only what supports the next job, and return before a risky trip becomes expensive. Do not measure progress by distance explored; measure it by whether the town can recover.",
         bullets: [
           "Minutes 0-15: collect close food, stone, sticks, and lumber without starting distant fights.",
           "Minutes 15-30: place storage and the first useful workstation cluster.",
@@ -410,8 +468,7 @@ export const guideBriefs: GuideBrief[] = [
       },
       {
         heading: "Beginner Mistakes That Waste a Save",
-        body:
-          "The common early failure is not one bad fight. It is a chain of small planning mistakes: scattered resources, farms too far from storage, too many unfinished structures, and exploration that starts before the base has food and defense.",
+        body: "The common early failure is not one bad fight. It is a chain of small planning mistakes: scattered resources, farms too far from storage, too many unfinished structures, and exploration that starts before the base has food and defense.",
       },
     ],
     tables: [
@@ -419,32 +476,92 @@ export const guideBriefs: GuideBrief[] = [
         title: "Beginner Priority Table",
         columns: ["Priority", "Do this first", "Why it matters"],
         rows: [
-          ["Food", "Secure nearby food sources", "Prevents the first settlement from stalling."],
-          ["Storage", "Create a clear resource drop area", "Makes crafting and repairs easier."],
-          ["Defense", "Keep the base compact", "Night pressure is easier to manage."],
-          ["Exploration", "Scout after basics are stable", "Reduces recovery risk."],
+          [
+            "Food",
+            "Secure nearby food sources",
+            "Prevents the first settlement from stalling.",
+          ],
+          [
+            "Storage",
+            "Create a clear resource drop area",
+            "Makes crafting and repairs easier.",
+          ],
+          [
+            "Defense",
+            "Keep the base compact",
+            "Night pressure is easier to manage.",
+          ],
+          [
+            "Exploration",
+            "Scout after basics are stable",
+            "Reduces recovery risk.",
+          ],
         ],
       },
       {
         title: "Early Resource Use Table",
-        columns: ["Resource or material", "What it helps with", "Beginner action"],
+        columns: [
+          "Resource or material",
+          "What it helps with",
+          "Beginner action",
+        ],
         rows: [
-          ["Stone", "Early construction and tool progression", "Pick up loose stone first, then use pickaxes on larger rocks when available."],
-          ["Lumber", "Structures, workstations, and wood planks", "Chop large trees with an axe and keep logs close to the build core."],
-          ["Wood Plank", "Processed wood material", "Turn lumber into planks when a recipe or workstation needs refined wood."],
-          ["Clay", "Building and later material chains", "Look for the distinct orange resource and move it with a bucket when needed."],
-          ["Flint Shard", "Early tool or crafting inputs", "Break larger flintstones against hard surfaces or use a pickaxe when available."],
-          ["Wood Stick", "Simple crafting and early utility", "Throw rocks into trees or cut small trees and bushes for quick sticks."],
+          [
+            "Stone",
+            "Early construction and tool progression",
+            "Pick up loose stone first, then use pickaxes on larger rocks when available.",
+          ],
+          [
+            "Lumber",
+            "Structures, workstations, and wood planks",
+            "Chop large trees with an axe and keep logs close to the build core.",
+          ],
+          [
+            "Wood Plank",
+            "Processed wood material",
+            "Turn lumber into planks when a recipe or workstation needs refined wood.",
+          ],
+          [
+            "Clay",
+            "Building and later material chains",
+            "Look for the distinct orange resource and move it with a bucket when needed.",
+          ],
+          [
+            "Flint Shard",
+            "Early tool or crafting inputs",
+            "Break larger flintstones against hard surfaces or use a pickaxe when available.",
+          ],
+          [
+            "Wood Stick",
+            "Simple crafting and early utility",
+            "Throw rocks into trees or cut small trees and bushes for quick sticks.",
+          ],
         ],
       },
       {
         title: "Beginner Bottleneck Router",
         columns: ["If you feel stuck because", "Fix first", "Then read"],
         rows: [
-          ["You cannot finish basic buildings", "Bring stone, lumber, clay, and sticks back to one storage area.", "Base Building"],
-          ["Food keeps interrupting exploration", "Build a small protected food loop before scouting farther.", "Farming"],
-          ["Workers are not saving time", "Assign them to the repeated job that blocks progress most often.", "Survivors"],
-          ["Night pressure keeps undoing progress", "Shrink the working area and defend storage, farms, and stations first.", "Best Base Layout"],
+          [
+            "You cannot finish basic buildings",
+            "Bring stone, lumber, clay, and sticks back to one storage area.",
+            "Base Building",
+          ],
+          [
+            "Food keeps interrupting exploration",
+            "Build a small protected food loop before scouting farther.",
+            "Farming",
+          ],
+          [
+            "Workers are not saving time",
+            "Assign them to the repeated job that blocks progress most often.",
+            "Survivors",
+          ],
+          [
+            "Night pressure keeps undoing progress",
+            "Shrink the working area and defend storage, farms, and stations first.",
+            "Best Base Layout",
+          ],
         ],
       },
     ],
@@ -493,7 +610,8 @@ export const guideBriefs: GuideBrief[] = [
     updateCaution:
       "Check the current build before relying on crossplay, dedicated servers, or permanent host-save behavior.",
     image: "/images/romestead/screenshot-04.webp",
-    imageAlt: "Romestead official screenshot showing co-op exploration and settlement activity",
+    imageAlt:
+      "Romestead official screenshot showing co-op exploration and settlement activity",
     imageCaption:
       "Co-op value comes from splitting meaningful work: gathering, building, farming, defense, and scouting each need different attention.",
     actionSteps: [
@@ -505,28 +623,23 @@ export const guideBriefs: GuideBrief[] = [
     sections: [
       {
         heading: "Best First Group Setup",
-        body:
-          "A small group should assign one player to resources, one to building, one to scouting, and one to defense. Larger groups should still keep a clear settlement plan so the town does not become scattered.",
+        body: "A small group should assign one player to resources, one to building, one to scouting, and one to defense. Larger groups should still keep a clear settlement plan so the town does not become scattered.",
       },
       {
         heading: "Co-op Risks to Test",
-        body:
-          "Before a long run, test reconnects, host saves, permissions, latency, and whether resource sharing feels stable.",
+        body: "Before a long run, test reconnects, host saves, permissions, latency, and whether resource sharing feels stable.",
       },
       {
         heading: "How Co-op Connects to Settlement Systems",
-        body:
-          "Co-op works best when each player owns a clear system. One player can maintain food, another can gather building materials, another can scout, and another can prepare defense or crafting upgrades.",
+        body: "Co-op works best when each player owns a clear system. One player can maintain food, another can gather building materials, another can scout, and another can prepare defense or crafting upgrades.",
       },
       {
         heading: "Large Group Caution",
-        body:
-          "Eight-player support is exciting, but a larger group can burn through resources and scatter work. Start smaller, learn the settlement rhythm, then scale the group when roles and storage are organized.",
+        body: "Eight-player support is exciting, but a larger group can burn through resources and scatter work. Start smaller, learn the settlement rhythm, then scale the group when roles and storage are organized.",
       },
       {
         heading: "30, 60, and 120 Minute Co-op Plan",
-        body:
-          "A co-op group should not treat eight-player support as permission for eight separate plans. Use time boxes. The first 30 minutes should establish storage and food, the first hour should define work zones, and the second hour should test exploration without abandoning the town.",
+        body: "A co-op group should not treat eight-player support as permission for eight separate plans. Use time boxes. The first 30 minutes should establish storage and food, the first hour should define work zones, and the second hour should test exploration without abandoning the town.",
         bullets: [
           "First 30 minutes: assign builder, gatherer, food lead, and scout.",
           "First 60 minutes: agree on shared storage names and base expansion direction.",
@@ -536,13 +649,11 @@ export const guideBriefs: GuideBrief[] = [
       },
       {
         heading: "How to Stop Co-op Chaos",
-        body:
-          "Most group problems come from invisible ownership. One player assumes someone else handled food, another drops materials away from storage, and a third starts a fight while the base is exposed. Give every player one recurring responsibility and one backup job.",
+        body: "Most group problems come from invisible ownership. One player assumes someone else handled food, another drops materials away from storage, and a third starts a fight while the base is exposed. Give every player one recurring responsibility and one backup job.",
       },
       {
         heading: "Co-op Rules That Keep a World Alive",
-        body:
-          "A good group world needs a few simple rules. Decide who can move shared storage, where new structures go, when the group explores, and what must be repaired before logging off. These rules matter more than perfect builds because they keep the settlement understandable between sessions.",
+        body: "A good group world needs a few simple rules. Decide who can move shared storage, where new structures go, when the group explores, and what must be repaired before logging off. These rules matter more than perfect builds because they keep the settlement understandable between sessions.",
         bullets: [
           "Do not move central storage without telling the group.",
           "Mark one expansion direction so workstations and farms do not block each other.",
@@ -557,50 +668,99 @@ export const guideBriefs: GuideBrief[] = [
         title: "Co-op Feature Status",
         columns: ["Feature", "Status", "Player note"],
         rows: [
-          ["1-8 players", "Confirmed", "Use smaller groups first while learning pacing."],
-          ["Online Co-op", "Confirmed", "Plan roles before leaving the settlement."],
+          [
+            "1-8 players",
+            "Confirmed",
+            "Use smaller groups first while learning pacing.",
+          ],
+          [
+            "Online Co-op",
+            "Confirmed",
+            "Plan roles before leaving the settlement.",
+          ],
           ["LAN Co-op", "Confirmed", "Useful for local network groups."],
           ["Split-screen", "Not confirmed", "Do not assume couch co-op."],
-          ["Crossplay", "Not confirmed", "Only PC Steam is verified right now."],
+          [
+            "Crossplay",
+            "Not confirmed",
+            "Only PC Steam is verified right now.",
+          ],
         ],
       },
       {
         title: "First Co-op Role Split",
         columns: ["Role", "Main job", "Avoid this mistake"],
         rows: [
-          ["Builder", "Place storage, workstations, paths, and defensive routes.", "Letting every player place buildings without a shared layout."],
-          ["Gatherer", "Feed stone, lumber, clay, and flint into the town loop.", "Dropping materials in scattered piles far from storage."],
-          ["Food lead", "Keep crops, storage, and meals ahead of group demand.", "Expanding exploration faster than food production."],
-          ["Scout", "Check nearby routes, enemies, and safe return paths.", "Starting distant fights before the base can recover."],
-          ["Defender", "Watch night pressure and protect key work zones.", "Defending exposed edges while storage and farms are unprotected."],
+          [
+            "Builder",
+            "Place storage, workstations, paths, and defensive routes.",
+            "Letting every player place buildings without a shared layout.",
+          ],
+          [
+            "Gatherer",
+            "Feed stone, lumber, clay, and flint into the town loop.",
+            "Dropping materials in scattered piles far from storage.",
+          ],
+          [
+            "Food lead",
+            "Keep crops, storage, and meals ahead of group demand.",
+            "Expanding exploration faster than food production.",
+          ],
+          [
+            "Scout",
+            "Check nearby routes, enemies, and safe return paths.",
+            "Starting distant fights before the base can recover.",
+          ],
+          [
+            "Defender",
+            "Watch night pressure and protect key work zones.",
+            "Defending exposed edges while storage and farms are unprotected.",
+          ],
         ],
       },
       {
         title: "Co-op Problem Solver",
-        columns: ["Group problem", "Likely cause", "Fix before the next session"],
+        columns: [
+          "Group problem",
+          "Likely cause",
+          "Fix before the next session",
+        ],
         rows: [
-          ["Everyone is gathering the same thing", "No named bottleneck", "Choose one missing material and assign only enough players to it."],
-          ["Food disappears too quickly", "Player count grew faster than farms", "Assign a food lead and delay distant exploration."],
-          ["The base is hard to use", "Too many builders made separate plans", "Pause expansion and agree on storage, paths, and work zones."],
-          ["Players log in confused", "No session handoff", "End with a short next-goal list: food, materials, defense, or exploration."],
+          [
+            "Everyone is gathering the same thing",
+            "No named bottleneck",
+            "Choose one missing material and assign only enough players to it.",
+          ],
+          [
+            "Food disappears too quickly",
+            "Player count grew faster than farms",
+            "Assign a food lead and delay distant exploration.",
+          ],
+          [
+            "The base is hard to use",
+            "Too many builders made separate plans",
+            "Pause expansion and agree on storage, paths, and work zones.",
+          ],
+          [
+            "Players log in confused",
+            "No session handoff",
+            "End with a short next-goal list: food, materials, defense, or exploration.",
+          ],
         ],
       },
     ],
     faqs: [
       {
         question: "How many players can play Romestead?",
-        answer:
-          "Official information lists 1-8 players for Romestead.",
+        answer: "Official information lists 1-8 players for Romestead.",
       },
       {
         question: "Does Romestead have online co-op?",
-        answer:
-          "Yes. Online Co-op is listed for Romestead on Steam.",
+        answer: "Yes. Online Co-op is listed for Romestead on Steam.",
       },
       {
         question: "Does Romestead support LAN co-op?",
-        answer:
-          "Yes. LAN Co-op is listed in the Steam feature labels.",
+        answer: "Yes. LAN Co-op is listed in the Steam feature labels.",
       },
       {
         question: "Does Romestead have crossplay?",
@@ -636,7 +796,8 @@ export const guideBriefs: GuideBrief[] = [
     updateCaution:
       "Do not guarantee Steam Deck or late-game performance from minimum specs alone.",
     image: "/images/romestead/screenshot-05.webp",
-    imageAlt: "Romestead official screenshot showing a larger settlement for PC performance checks",
+    imageAlt:
+      "Romestead official screenshot showing a larger settlement for PC performance checks",
     imageCaption:
       "A small first base may run differently from a larger settlement with more workers, structures, and co-op activity.",
     actionSteps: [
@@ -648,33 +809,27 @@ export const guideBriefs: GuideBrief[] = [
     sections: [
       {
         heading: "What to Test First",
-        body:
-          "After install, test a short session with building, gathering, menu navigation, camera movement, and co-op if you plan to play with friends.",
+        body: "After install, test a short session with building, gathering, menu navigation, camera movement, and co-op if you plan to play with friends.",
       },
       {
         heading: "Performance Habits",
-        body:
-          "Keep graphics settings practical, close capture-heavy background apps, and test a save after the first settlement expands.",
+        body: "Keep graphics settings practical, close capture-heavy background apps, and test a save after the first settlement expands.",
       },
       {
         heading: "Why Minimum Specs Are Not Enough",
-        body:
-          "A survival town builder can become heavier after more buildings, workers, crops, enemies, and co-op players enter the save. Treat the first hour as a baseline, then retest once the settlement grows.",
+        body: "A survival town builder can become heavier after more buildings, workers, crops, enemies, and co-op players enter the save. Treat the first hour as a baseline, then retest once the settlement grows.",
       },
       {
         heading: "When to Use This Page Again",
-        body:
-          "Return to this page after major patches, before a co-op campaign, and before switching to handheld play. Performance advice is most useful when tied to the exact way you plan to play.",
+        body: "Return to this page after major patches, before a co-op campaign, and before switching to handheld play. Performance advice is most useful when tied to the exact way you plan to play.",
       },
       {
         heading: "What Specs Cannot Tell You",
-        body:
-          "Minimum requirements only answer whether the game should start. They do not prove comfort in a growing settlement. Romestead can become more demanding when there are more buildings, workers, crops, enemies, and co-op activity on screen.",
+        body: "Minimum requirements only answer whether the game should start. They do not prove comfort in a growing settlement. Romestead can become more demanding when there are more buildings, workers, crops, enemies, and co-op activity on screen.",
       },
       {
         heading: "Best Settings Test Before a Long Save",
-        body:
-          "Run a practical test instead of staring at spec numbers. Move the camera around a built area, open storage, place a structure, fight briefly, and test co-op if that is your main mode. If any of those feel rough, fix settings before committing hours to the save.",
+        body: "Run a practical test instead of staring at spec numbers. Move the camera around a built area, open storage, place a structure, fight briefly, and test co-op if that is your main mode. If any of those feel rough, fix settings before committing hours to the save.",
         bullets: [
           "Watch frame consistency while moving through a settlement.",
           "Check input response during building placement and inventory movement.",
@@ -684,8 +839,7 @@ export const guideBriefs: GuideBrief[] = [
       },
       {
         heading: "When Performance Gets Worse Later",
-        body:
-          "If the first hour runs well but a later save feels worse, look at settlement density before blaming one setting. More farms, workers, storage movement, enemies, and co-op players can create heavier scenes. Test the same save after changing one thing at a time so you know what actually helped.",
+        body: "If the first hour runs well but a later save feels worse, look at settlement density before blaming one setting. More farms, workers, storage movement, enemies, and co-op players can create heavier scenes. Test the same save after changing one thing at a time so you know what actually helped.",
         links: ["base-building", "multiplayer-coop"],
       },
     ],
@@ -695,8 +849,16 @@ export const guideBriefs: GuideBrief[] = [
         columns: ["Check", "Why it matters", "When to retest"],
         rows: [
           ["Windows PC", "Confirmed platform focus", "Before purchase"],
-          ["RAM", "Settlement games can grow heavier over time", "After the town expands"],
-          ["Storage", "Patch space matters during Early Access", "After updates"],
+          [
+            "RAM",
+            "Settlement games can grow heavier over time",
+            "After the town expands",
+          ],
+          [
+            "Storage",
+            "Patch space matters during Early Access",
+            "After updates",
+          ],
           ["Internet", "Needed for online co-op", "Before group sessions"],
         ],
       },
@@ -704,20 +866,52 @@ export const guideBriefs: GuideBrief[] = [
         title: "Performance Test Route",
         columns: ["Test step", "What to watch", "Next action"],
         rows: [
-          ["Open menus and inventory", "Input delay, text readability, cursor comfort", "Adjust resolution or UI settings before a long save."],
-          ["Build a compact base", "Frame drops during placement and camera movement", "Lower settings if placement feels inconsistent."],
-          ["Add farms and storage", "Stutter around repeated jobs and item movement", "Retest after the settlement grows."],
-          ["Try co-op", "Latency, reconnect behavior, and host stability", "Run a short test before a long group world."],
+          [
+            "Open menus and inventory",
+            "Input delay, text readability, cursor comfort",
+            "Adjust resolution or UI settings before a long save.",
+          ],
+          [
+            "Build a compact base",
+            "Frame drops during placement and camera movement",
+            "Lower settings if placement feels inconsistent.",
+          ],
+          [
+            "Add farms and storage",
+            "Stutter around repeated jobs and item movement",
+            "Retest after the settlement grows.",
+          ],
+          [
+            "Try co-op",
+            "Latency, reconnect behavior, and host stability",
+            "Run a short test before a long group world.",
+          ],
         ],
       },
       {
         title: "Performance Symptom Table",
         columns: ["Symptom", "Check first", "Useful next step"],
         rows: [
-          ["Stutter near the town", "Settlement size, storage clutter, and worker routes", "Simplify the base core before lowering every setting."],
-          ["Menus feel slow", "Resolution, UI scaling, and background apps", "Retest inventory and storage after changes."],
-          ["Co-op feels worse than solo", "Host PC, connection, and player count", "Run a short two-player test before an eight-player session."],
-          ["Handheld battery drains fast", "Power profile and graphics settings", "Use the Steam Deck checklist before a long save."],
+          [
+            "Stutter near the town",
+            "Settlement size, storage clutter, and worker routes",
+            "Simplify the base core before lowering every setting.",
+          ],
+          [
+            "Menus feel slow",
+            "Resolution, UI scaling, and background apps",
+            "Retest inventory and storage after changes.",
+          ],
+          [
+            "Co-op feels worse than solo",
+            "Host PC, connection, and player count",
+            "Run a short two-player test before an eight-player session.",
+          ],
+          [
+            "Handheld battery drains fast",
+            "Power profile and graphics settings",
+            "Use the Steam Deck checklist before a long save.",
+          ],
         ],
       },
     ],
@@ -738,7 +932,12 @@ export const guideBriefs: GuideBrief[] = [
           "Late-game performance needs player testing because settlement size, updates, and co-op sessions can affect performance.",
       },
     ],
-    relatedSlugs: ["steam-deck", "release-date", "is-it-worth-it", "multiplayer-coop"],
+    relatedSlugs: [
+      "steam-deck",
+      "release-date",
+      "is-it-worth-it",
+      "multiplayer-coop",
+    ],
   },
   {
     slug: "steam-deck",
@@ -758,7 +957,7 @@ export const guideBriefs: GuideBrief[] = [
     status: "Needs Testing",
     updatedAt,
     fastAnswer:
-      "Treat Romestead Steam Deck support as a launch-window test item unless Valve or stable player reports confirm compatibility. Check controls, text size, performance, cloud saves, and co-op before committing.",
+      "Treat Romestead Steam Deck support as a current-build test item unless Valve or stable player reports confirm compatibility. Check controls, text size, performance, cloud saves, and co-op before committing.",
     intro:
       "Steam Deck questions need careful wording because a game can launch on PC without being comfortable on a handheld screen. Romestead's UI, settlement management, building controls, and co-op flow should be tested directly.",
     playerNote:
@@ -766,7 +965,8 @@ export const guideBriefs: GuideBrief[] = [
     updateCaution:
       "Do not call Romestead Steam Deck Verified unless Valve or Steam displays that status.",
     image: "/images/romestead/screenshot-06.webp",
-    imageAlt: "Romestead official screenshot used for Steam Deck readability and control checks",
+    imageAlt:
+      "Romestead official screenshot used for Steam Deck readability and control checks",
     imageCaption:
       "Handheld comfort depends on more than launch support: text size, building placement, menus, and long-session performance all matter.",
     actionSteps: [
@@ -778,28 +978,23 @@ export const guideBriefs: GuideBrief[] = [
     sections: [
       {
         heading: "Deck Checks Before a Long Save",
-        body:
-          "Open menus, place buildings, manage storage, read small text, fight at night, and test battery behavior before treating the Deck as your main platform.",
+        body: "Open menus, place buildings, manage storage, read small text, fight at night, and test battery behavior before treating the Deck as your main platform.",
       },
       {
         heading: "Controls and Readability",
-        body:
-          "Building and inventory-heavy games can feel different on handheld controls. If cursor precision or text size feels rough, use a short refund-window test before a long run.",
+        body: "Building and inventory-heavy games can feel different on handheld controls. If cursor precision or text size feels rough, use a short refund-window test before a long run.",
       },
       {
         heading: "Best Handheld Test Route",
-        body:
-          "Do not judge Steam Deck comfort from the title screen. Build a small structure, move items through storage, read menus, fight a short encounter, and check battery drain before deciding.",
+        body: "Do not judge Steam Deck comfort from the title screen. Build a small structure, move items through storage, read menus, fight a short encounter, and check battery drain before deciding.",
       },
       {
         heading: "Why This Page Stays Conservative",
-        body:
-          "Steam Deck labels and player reports can change quickly after launch. This page should upgrade from cautious advice only when there is a stable compatibility signal.",
+        body: "Steam Deck labels and player reports can change quickly after launch. This page should upgrade from cautious advice only when there is a stable compatibility signal.",
       },
       {
         heading: "Steam Deck Buy-or-Wait Test",
-        body:
-          "For Deck-first players, the right question is not only whether Romestead launches. The better question is whether building, storage, reading menus, and fighting are comfortable on a small screen for a full session.",
+        body: "For Deck-first players, the right question is not only whether Romestead launches. The better question is whether building, storage, reading menus, and fighting are comfortable on a small screen for a full session.",
         bullets: [
           "Buy only if you are willing to test within the refund window.",
           "Wait if you need verified status, large text, and stable late-game performance.",
@@ -809,13 +1004,11 @@ export const guideBriefs: GuideBrief[] = [
       },
       {
         heading: "Controls Matter More Than FPS Alone",
-        body:
-          "A steady frame rate is not enough for a town builder. If building placement, item movement, or menu reading feels awkward, the game can be technically playable but still a poor handheld fit.",
+        body: "A steady frame rate is not enough for a town builder. If building placement, item movement, or menu reading feels awkward, the game can be technically playable but still a poor handheld fit.",
       },
       {
         heading: "Deck Players Need a Different First Hour",
-        body:
-          "Desktop players can focus on progression, but Deck-first players should spend the first hour testing comfort. Build, move resources, read several menus, fight briefly, and suspend the system once. If any basic action feels annoying in the first hour, it will feel worse in a long settlement save.",
+        body: "Desktop players can focus on progression, but Deck-first players should spend the first hour testing comfort. Build, move resources, read several menus, fight briefly, and suspend the system once. If any basic action feels annoying in the first hour, it will feel worse in a long settlement save.",
         links: ["system-requirements", "is-it-worth-it"],
       },
     ],
@@ -824,30 +1017,78 @@ export const guideBriefs: GuideBrief[] = [
         title: "Steam Deck Test Checklist",
         columns: ["Area", "What to test", "Risk"],
         rows: [
-          ["Text", "Menus, item names, job labels", "Small text can slow settlement management."],
-          ["Controls", "Building placement and inventory movement", "Cursor-heavy UI may need tuning."],
-          ["Performance", "First base and expanding base", "Early runs may not show late-game load."],
-          ["Cloud saves", "Desktop to Deck transfer", "Needs confirmation before switching devices."],
+          [
+            "Text",
+            "Menus, item names, job labels",
+            "Small text can slow settlement management.",
+          ],
+          [
+            "Controls",
+            "Building placement and inventory movement",
+            "Cursor-heavy UI may need tuning.",
+          ],
+          [
+            "Performance",
+            "First base and expanding base",
+            "Early runs may not show late-game load.",
+          ],
+          [
+            "Cloud saves",
+            "Desktop to Deck transfer",
+            "Needs confirmation before switching devices.",
+          ],
         ],
       },
       {
         title: "Handheld Test Route",
         columns: ["Step", "Pass if", "Fail if"],
         rows: [
-          ["Read the first menus", "Item names and labels are comfortable without squinting.", "Text forces you to lean in or pause constantly."],
-          ["Place a building", "Controls feel precise enough for layout work.", "Placement feels slow, jumpy, or frustrating."],
-          ["Move resources", "Inventory and storage actions feel repeatable.", "Basic hauling takes too many awkward inputs."],
-          ["Fight a short encounter", "Camera, dodge, and targeting feel readable.", "Combat clarity drops on the smaller screen."],
+          [
+            "Read the first menus",
+            "Item names and labels are comfortable without squinting.",
+            "Text forces you to lean in or pause constantly.",
+          ],
+          [
+            "Place a building",
+            "Controls feel precise enough for layout work.",
+            "Placement feels slow, jumpy, or frustrating.",
+          ],
+          [
+            "Move resources",
+            "Inventory and storage actions feel repeatable.",
+            "Basic hauling takes too many awkward inputs.",
+          ],
+          [
+            "Fight a short encounter",
+            "Camera, dodge, and targeting feel readable.",
+            "Combat clarity drops on the smaller screen.",
+          ],
         ],
       },
       {
         title: "Steam Deck Decision Table",
         columns: ["Result after testing", "Best decision", "Why"],
         rows: [
-          ["Menus and placement feel comfortable", "Continue, but retest after the base grows.", "Early comfort does not prove late-save comfort."],
-          ["Text is hard to read", "Wait or play desktop first.", "Small text hurts every storage, crafting, and survivor decision."],
-          ["Combat is readable but building is awkward", "Use Deck for light sessions only.", "Base planning needs precision over time."],
-          ["Performance drops during basic building", "Wait for patches or stronger reports.", "A larger settlement is likely to be heavier."],
+          [
+            "Menus and placement feel comfortable",
+            "Continue, but retest after the base grows.",
+            "Early comfort does not prove late-save comfort.",
+          ],
+          [
+            "Text is hard to read",
+            "Wait or play desktop first.",
+            "Small text hurts every storage, crafting, and survivor decision.",
+          ],
+          [
+            "Combat is readable but building is awkward",
+            "Use Deck for light sessions only.",
+            "Base planning needs precision over time.",
+          ],
+          [
+            "Performance drops during basic building",
+            "Wait for patches or stronger reports.",
+            "A larger settlement is likely to be heavier.",
+          ],
         ],
       },
     ],
@@ -896,56 +1137,50 @@ export const guideBriefs: GuideBrief[] = [
     updateCaution:
       "Base the buy-or-wait decision on the current build, recent reviews, and your tolerance for Early Access changes.",
     image: "/images/romestead/screenshot-07.webp",
-    imageAlt: "Romestead official screenshot showing town building and survival action for buy or wait advice",
+    imageAlt:
+      "Romestead official screenshot showing town building and survival action for buy or wait advice",
     imageCaption:
       "Romestead is strongest for players who enjoy building a working settlement, not just reading a fixed walkthrough.",
     actionSteps: [
       "Buy now if Early Access discovery is part of the fun for you.",
-      "Try a demo first if performance, controls, or camera comfort are your main concerns.",
+      "Run a short refund-window test if performance, controls, or camera comfort are your main concerns.",
       "Wait if you need a finished 1.0 loop or confirmed handheld support.",
       "Read co-op and base building pages before buying for a group.",
     ],
     sections: [
       {
         heading: "Buy Now If",
-        body:
-          "Buy now if your main interest is building a Roman-inspired settlement, dividing work with friends, and learning systems as Early Access evolves.",
+        body: "Buy now if your main interest is building a Roman-inspired settlement, dividing work with friends, and learning systems as Early Access evolves.",
       },
       {
         heading: "Wait If",
-        body:
-          "Wait if you need a finished campaign, verified handheld support, stable late-game performance, or a fully mapped meta.",
+        body: "Wait if you need a finished campaign, verified handheld support, stable late-game performance, or a fully mapped meta.",
       },
       {
         heading: "Best Fit Players",
-        body:
-          "Romestead is strongest for players who like base planning, co-op division of labor, resource management, farming, and discovering systems while a game evolves.",
+        body: "Romestead is strongest for players who like base planning, co-op division of labor, resource management, farming, and discovering systems while a game evolves.",
       },
       {
         heading: "Poor Fit Players",
-        body:
-          "It is a weaker fit if you mainly want PvP, a finished story campaign, console certainty, or a complete wiki with every recipe and boss route already solved.",
+        body: "It is a weaker fit if you mainly want PvP, a finished story campaign, console certainty, or a complete wiki with every recipe and boss route already solved.",
       },
       {
         heading: "Who Should Buy on Day One",
-        body:
-          "Romestead is a better day-one fit for players who enjoy learning systems while they change. If you like base planning, co-op roles, food loops, Roman god flavor, and discovering rough edges with a group, Early Access can be part of the appeal.",
+        body: "Romestead is a better day-one fit for players who enjoy learning systems while they change. If you like base planning, co-op roles, food loops, Roman god flavor, and discovering rough edges with a group, Early Access can be part of the appeal.",
       },
       {
         heading: "Who Should Wait",
-        body:
-          "Wait if you need a finished campaign, settled balance, complete recipe data, verified Steam Deck comfort, or console support. Those needs are reasonable, but they point toward waiting for more reports rather than forcing an Early Access purchase.",
+        body: "Wait if you need a finished campaign, settled balance, complete recipe data, verified Steam Deck comfort, or console support. Those needs are reasonable, but they point toward waiting for more reports rather than forcing an Early Access purchase.",
         bullets: [
           "Wait for reviews if performance is your main concern.",
           "Wait for wiki depth if you dislike discovering recipes and systems yourself.",
           "Wait for 1.0 if you want a stable final meta.",
-          "Try a demo first if controls or camera comfort matter most.",
+          "Use a short first-session test if controls or camera comfort matter most.",
         ],
       },
       {
         heading: "What to Do If You Buy Now",
-        body:
-          "If you buy during Early Access, treat the first session like a test run. Learn the controls, build a compact settlement, try one short exploration route, and check whether the loop makes you want another session. Do not judge the game only by how much content is solved on day one.",
+        body: "If you buy during Early Access, treat the first session like a test run. Learn the controls, build a compact settlement, try one short exploration route, and check whether the loop makes you want another session. Do not judge the game only by how much content is solved on day one.",
         bullets: [
           "Play one short solo session before organizing a large co-op world.",
           "Use the beginner guide to avoid wasting the first save on scattered building.",
@@ -960,31 +1195,79 @@ export const guideBriefs: GuideBrief[] = [
         title: "Buy or Wait Decision",
         columns: ["Player type", "Recommendation", "Reason"],
         rows: [
-          ["Co-op builders", "Consider buying", "1-8 player co-op is a strong hook."],
-          ["Solo survival fans", "Consider buying", "The loop fits players who like settlement pressure."],
+          [
+            "Co-op builders",
+            "Consider buying",
+            "1-8 player co-op is a strong hook.",
+          ],
+          [
+            "Solo survival fans",
+            "Consider buying",
+            "The loop fits players who like settlement pressure.",
+          ],
           ["Steam Deck-only players", "Wait", "Compatibility needs proof."],
-          ["1.0-only players", "Wait", "Early Access can change for 1-2 years."],
+          [
+            "1.0-only players",
+            "Wait",
+            "Early Access can change for 1-2 years.",
+          ],
         ],
       },
       {
         title: "Decision Checklist",
         columns: ["If this matters most", "Better choice", "Why"],
         rows: [
-          ["Playing with friends this week", "Buy or try now", "Co-op is one of the clearest confirmed hooks."],
-          ["Complete recipe and boss data", "Wait", "Early Access guides and wiki data are still filling in."],
-          ["Settlement building and farming", "Buy or demo first", "The core fantasy fits base planners and resource-loop players."],
-          ["Console play", "Wait", "Xbox and PlayStation versions are not confirmed."],
-          ["Handheld-only play", "Wait or test fast", "Steam Deck comfort needs current player reports."],
+          [
+            "Playing with friends this week",
+            "Buy or try now",
+            "Co-op is one of the clearest confirmed hooks.",
+          ],
+          [
+            "Complete recipe and boss data",
+            "Wait",
+            "Early Access guides and wiki data are still filling in.",
+          ],
+          [
+            "Settlement building and farming",
+            "Buy or test fast",
+            "The core fantasy fits base planners and resource-loop players.",
+          ],
+          [
+            "Console play",
+            "Wait",
+            "Xbox and PlayStation versions are not confirmed.",
+          ],
+          [
+            "Handheld-only play",
+            "Wait or test fast",
+            "Steam Deck comfort needs current player reports.",
+          ],
         ],
       },
       {
         title: "Player Fit Table",
         columns: ["You enjoy", "Romestead fit", "Read next"],
         rows: [
-          ["Co-op town projects", "Strong fit if your group likes assigned roles.", "Multiplayer Co-op"],
-          ["Compact survival planning", "Strong fit if base layout and resources are the appeal.", "Base Building"],
-          ["Finished wiki routes", "Weaker fit at launch because data is still forming.", "Beginner Guide"],
-          ["Handheld-only play", "Unclear fit until compatibility reports are stable.", "Steam Deck"],
+          [
+            "Co-op town projects",
+            "Strong fit if your group likes assigned roles.",
+            "Multiplayer Co-op",
+          ],
+          [
+            "Compact survival planning",
+            "Strong fit if base layout and resources are the appeal.",
+            "Base Building",
+          ],
+          [
+            "Finished wiki routes",
+            "Weaker fit at launch because data is still forming.",
+            "Beginner Guide",
+          ],
+          [
+            "Handheld-only play",
+            "Unclear fit until compatibility reports are stable.",
+            "Steam Deck",
+          ],
         ],
       },
     ],
@@ -1005,7 +1288,12 @@ export const guideBriefs: GuideBrief[] = [
           "Wait for 1.0 if you need a finished, stable, fully documented experience.",
       },
     ],
-    relatedSlugs: ["release-date", "multiplayer-coop", "steam-deck", "base-building"],
+    relatedSlugs: [
+      "release-date",
+      "multiplayer-coop",
+      "steam-deck",
+      "base-building",
+    ],
   },
   {
     slug: "base-building",
@@ -1033,7 +1321,8 @@ export const guideBriefs: GuideBrief[] = [
     updateCaution:
       "Do not describe exact tile-perfect layouts as final while building rules and balance can change.",
     image: "/images/romestead/screenshot-08.webp",
-    imageAlt: "Romestead official screenshot showing settlement construction and base planning",
+    imageAlt:
+      "Romestead official screenshot showing settlement construction and base planning",
     imageCaption:
       "Base building connects directly to storage, farming, survivors, and night defense; those pages should be read together.",
     actionSteps: [
@@ -1045,40 +1334,33 @@ export const guideBriefs: GuideBrief[] = [
     sections: [
       {
         heading: "Compact First Base",
-        body:
-          "Keep the first base tight enough that storage, crafting, food, and defense support each other. Leave room for paths so the settlement can grow without blocking future upgrades.",
+        body: "Keep the first base tight enough that storage, crafting, food, and defense support each other. Leave room for paths so the settlement can grow without blocking future upgrades.",
       },
       {
         heading: "Expansion Timing",
-        body:
-          "Expand after the settlement can handle nights, chores, and resource flow. A wider base creates more walking, more exposed edges, and more planning debt.",
+        body: "Expand after the settlement can handle nights, chores, and resource flow. A wider base creates more walking, more exposed edges, and more planning debt.",
       },
       {
         heading: "Base Building and Farming",
-        body:
-          "Farms should not be placed as an afterthought. Food production needs access to storage, workers, and defense, so base building and farming pages should be used together.",
+        body: "Farms should not be placed as an afterthought. Food production needs access to storage, workers, and defense, so base building and farming pages should be used together.",
       },
       {
         heading: "Base Building and Survivors",
-        body:
-          "Survivors make a layout stronger only if jobs are close enough to matter. Long walking routes can turn useful workers into wasted time, especially in larger settlements.",
+        body: "Survivors make a layout stronger only if jobs are close enough to matter. Long walking routes can turn useful workers into wasted time, especially in larger settlements.",
       },
       {
         heading: "Storage Before Decoration",
-        body:
-          "Resources have weight and movement cost. Put material storage near the workstations that consume stone, lumber, planks, clay, and flint so building does not become a walking simulator.",
+        body: "Resources have weight and movement cost. Put material storage near the workstations that consume stone, lumber, planks, clay, and flint so building does not become a walking simulator.",
         links: ["beginner-guide", "farming"],
       },
       {
         heading: "Build Around the Cart Route",
-        body:
-          "The wiki notes that resources can be carried or moved with a Wooden Cart. Leave enough path space for hauling routes between gathering points, storage, farms, and construction zones.",
+        body: "The wiki notes that resources can be carried or moved with a Wooden Cart. Leave enough path space for hauling routes between gathering points, storage, farms, and construction zones.",
         links: ["best-base-layout", "survivors"],
       },
       {
         heading: "Base Layout Phases",
-        body:
-          "Think in phases instead of one perfect blueprint. The first phase is survival: storage, food, workstations, and defense close together. The second phase is efficiency: shorter hauling routes and clearer jobs. The third phase is expansion: new zones only after the core keeps working.",
+        body: "Think in phases instead of one perfect blueprint. The first phase is survival: storage, food, workstations, and defense close together. The second phase is efficiency: shorter hauling routes and clearer jobs. The third phase is expansion: new zones only after the core keeps working.",
         bullets: [
           "Phase 1: compact core with storage and essential workstations.",
           "Phase 2: protected farms and clear paths to material storage.",
@@ -1088,13 +1370,11 @@ export const guideBriefs: GuideBrief[] = [
       },
       {
         heading: "How to Tell a Base Is Failing",
-        body:
-          "A bad base usually feels slow before it feels dangerous. If players spend more time walking than building, if food is far from storage, or if workers cross exposed routes at night, the layout is creating the problem.",
+        body: "A bad base usually feels slow before it feels dangerous. If players spend more time walking than building, if food is far from storage, or if workers cross exposed routes at night, the layout is creating the problem.",
       },
       {
         heading: "Resource Storage Should Match Use",
-        body:
-          "Do not treat every material pile the same. Keep building materials near construction and workstation zones, keep food near farms and worker paths, and keep exploration supplies easy to grab before leaving town. Storage becomes useful when it answers where a player should drop the next item.",
+        body: "Do not treat every material pile the same. Keep building materials near construction and workstation zones, keep food near farms and worker paths, and keep exploration supplies easy to grab before leaving town. Storage becomes useful when it answers where a player should drop the next item.",
         links: ["beginner-guide", "survivors"],
       },
     ],
@@ -1105,29 +1385,73 @@ export const guideBriefs: GuideBrief[] = [
         rows: [
           ["Storage", "Workstations", "Reduces repeated resource movement."],
           ["Farms", "Food storage and paths", "Keeps food loops readable."],
-          ["Defense", "Main approach and work zones", "Protects the settlement core."],
-          ["Expansion", "Outside the core", "Avoids rebuilding the first base too soon."],
+          [
+            "Defense",
+            "Main approach and work zones",
+            "Protects the settlement core.",
+          ],
+          [
+            "Expansion",
+            "Outside the core",
+            "Avoids rebuilding the first base too soon.",
+          ],
         ],
       },
       {
         title: "Workstation and Resource Flow",
         columns: ["Base element", "Needs from the player", "Common mistake"],
         rows: [
-          ["Material Storage", "A central place for hauled resources", "Putting storage far from the stations that use it."],
-          ["Logistics Tent", "Worker-supported movement to town storage", "Automating resources before paths and storage are readable."],
-          ["Quarry", "Stone automation once stone becomes a bottleneck", "Building it before the town can use the output efficiently."],
-          ["Lumber Yard", "Lumber automation for construction-heavy expansion", "Expanding wood production without enough storage space."],
-          ["Clay Pit", "Clay access when clay starts blocking buildings", "Treating clay like a basic carry item without planning bucket movement."],
+          [
+            "Material Storage",
+            "A central place for hauled resources",
+            "Putting storage far from the stations that use it.",
+          ],
+          [
+            "Logistics Tent",
+            "Worker-supported movement to town storage",
+            "Automating resources before paths and storage are readable.",
+          ],
+          [
+            "Quarry",
+            "Stone automation once stone becomes a bottleneck",
+            "Building it before the town can use the output efficiently.",
+          ],
+          [
+            "Lumber Yard",
+            "Lumber automation for construction-heavy expansion",
+            "Expanding wood production without enough storage space.",
+          ],
+          [
+            "Clay Pit",
+            "Clay access when clay starts blocking buildings",
+            "Treating clay like a basic carry item without planning bucket movement.",
+          ],
         ],
       },
       {
         title: "Storage Placement Router",
         columns: ["Material type", "Store closest to", "Why"],
         rows: [
-          ["Stone, lumber, clay, and flint", "Workstations and construction zones", "These inputs block buildings and tool progress when scattered."],
-          ["Food and crops", "Farms, cooking, and worker routes", "Food only helps if workers can reach and replace it quickly."],
-          ["Exploration supplies", "Main exit route", "Players should leave town without crossing the whole base."],
-          ["Overflow materials", "Outer storage or expansion zone", "Keeps the core readable while preserving spare resources."],
+          [
+            "Stone, lumber, clay, and flint",
+            "Workstations and construction zones",
+            "These inputs block buildings and tool progress when scattered.",
+          ],
+          [
+            "Food and crops",
+            "Farms, cooking, and worker routes",
+            "Food only helps if workers can reach and replace it quickly.",
+          ],
+          [
+            "Exploration supplies",
+            "Main exit route",
+            "Players should leave town without crossing the whole base.",
+          ],
+          [
+            "Overflow materials",
+            "Outer storage or expansion zone",
+            "Keeps the core readable while preserving spare resources.",
+          ],
         ],
       },
     ],
@@ -1145,10 +1469,15 @@ export const guideBriefs: GuideBrief[] = [
       {
         question: "What is the best base layout?",
         answer:
-          "Use launch-window principles rather than a fixed layout: compact core, clear paths, close storage, and controlled expansion.",
+          "Use current-build principles rather than a fixed layout: compact core, clear paths, close storage, and controlled expansion.",
       },
     ],
-    relatedSlugs: ["best-base-layout", "farming", "survivors", "beginner-guide"],
+    relatedSlugs: [
+      "best-base-layout",
+      "farming",
+      "survivors",
+      "beginner-guide",
+    ],
   },
   {
     slug: "best-base-layout",
@@ -1159,16 +1488,16 @@ export const guideBriefs: GuideBrief[] = [
       "Romestead base design",
       "Romestead defense layout",
     ],
-    title: "Romestead Best Base Layout: Launch-Window Settlement Plan",
+    title: "Romestead Best Base Layout: Current-Build Settlement Plan",
     metaDescription:
-      "Romestead best base layout guide with cautious launch-window settlement planning for storage, farms, workstations, defense, and expansion.",
+      "Romestead best base layout guide with cautious current-build settlement planning for storage, farms, workstations, defense, and expansion.",
     h1: "Romestead Best Base Layout",
     searchIntent:
       "Players want a recommended layout, but the page must avoid pretending one final meta layout is proven during Early Access.",
     status: "Needs Testing",
     updatedAt,
     fastAnswer:
-      "The safest Romestead base layout is a compact hub: central storage, nearby workstations, farms on protected edges, short paths, and expansion zones outside the core. Treat this as launch-window guidance, not a final meta.",
+      "The safest Romestead base layout is a compact hub: central storage, nearby workstations, farms on protected edges, short paths, and expansion zones outside the core. Treat this as current-build guidance, not a final meta.",
     intro:
       "A good Romestead layout should make the settlement easier to run. The goal is not to force a perfect blueprint before the community has tested late-game pressure.",
     playerNote:
@@ -1176,9 +1505,10 @@ export const guideBriefs: GuideBrief[] = [
     updateCaution:
       "Avoid absolute terms like only, always, or strongest when describing layouts.",
     image: "/images/romestead/screenshot-09.webp",
-    imageAlt: "Romestead official screenshot showing settlement layout and expansion space",
+    imageAlt:
+      "Romestead official screenshot showing settlement layout and expansion space",
     imageCaption:
-      "A launch-window layout should be easy to adapt after players learn more about recipes, defense pressure, and survivor pathing.",
+      "A current-build layout should be easy to adapt after players learn more about recipes, defense pressure, and survivor pathing.",
     actionSteps: [
       "Start with a central storage hub.",
       "Ring the hub with workstations and short walking routes.",
@@ -1188,28 +1518,23 @@ export const guideBriefs: GuideBrief[] = [
     sections: [
       {
         heading: "Recommended Layout Shape",
-        body:
-          "Use a compact core with storage in the middle, workstations close by, food production on reachable edges, and defense facing likely pressure points.",
+        body: "Use a compact core with storage in the middle, workstations close by, food production on reachable edges, and defense facing likely pressure points.",
       },
       {
         heading: "Why This Layout Works Early",
-        body:
-          "It reduces walking, keeps key jobs visible, and lets you expand without tearing down the entire settlement.",
+        body: "It reduces walking, keeps key jobs visible, and lets you expand without tearing down the entire settlement.",
       },
       {
         heading: "Layout for Co-op Groups",
-        body:
-          "Co-op layouts need clear shared storage and obvious work zones. If players cannot see where food, crafting, and resources belong, group play becomes messy fast.",
+        body: "Co-op layouts need clear shared storage and obvious work zones. If players cannot see where food, crafting, and resources belong, group play becomes messy fast.",
       },
       {
         heading: "Layout for Future Systems",
-        body:
-          "Leave space for crafting, tools, armor, weapons, and resource pages to become more specific later. A flexible layout beats a fixed blueprint while systems are still being documented.",
+        body: "Leave space for crafting, tools, armor, weapons, and resource pages to become more specific later. A flexible layout beats a fixed blueprint while systems are still being documented.",
       },
       {
         heading: "Practical Blueprint Without Exact Tiles",
-        body:
-          "Use a hub-and-spoke idea: storage in the center, workstations around it, farms on protected edges, and defense facing the routes you actually use. This gives you a layout you can adapt without pretending that one tile-perfect answer is proven.",
+        body: "Use a hub-and-spoke idea: storage in the center, workstations around it, farms on protected edges, and defense facing the routes you actually use. This gives you a layout you can adapt without pretending that one tile-perfect answer is proven.",
         bullets: [
           "Center: shared material storage and the most-used crafting stations.",
           "Inner ring: food access, repair access, and short worker paths.",
@@ -1219,24 +1544,30 @@ export const guideBriefs: GuideBrief[] = [
       },
       {
         heading: "When to Rebuild Instead of Patch",
-        body:
-          "Small fixes are enough when only one route is slow. Rebuild the core when storage is in the wrong place, farms are exposed, or every new workstation makes the base harder to read.",
+        body: "Small fixes are enough when only one route is slow. Rebuild the core when storage is in the wrong place, farms are exposed, or every new workstation makes the base harder to read.",
       },
       {
         heading: "How to Adapt the Layout After Patches",
-        body:
-          "When a patch changes recipes, balance, or worker behavior, do not rebuild everything immediately. Watch which route becomes painful first: storage, food, defense, crafting, or exploration. Fix that route, then decide whether the hub still works.",
+        body: "When a patch changes recipes, balance, or worker behavior, do not rebuild everything immediately. Watch which route becomes painful first: storage, food, defense, crafting, or exploration. Fix that route, then decide whether the hub still works.",
         links: ["base-building", "farming"],
       },
     ],
     tables: [
       {
-        title: "Launch-Window Layout Plan",
+        title: "Current-Build Layout Plan",
         columns: ["Area", "Suggested position", "Reason"],
         rows: [
-          ["Central storage", "Middle of base", "Shortens most crafting loops."],
+          [
+            "Central storage",
+            "Middle of base",
+            "Shortens most crafting loops.",
+          ],
           ["Workstations", "Around storage", "Keeps production efficient."],
-          ["Farms", "Protected outer edge", "Leaves space while staying reachable."],
+          [
+            "Farms",
+            "Protected outer edge",
+            "Leaves space while staying reachable.",
+          ],
           ["Defense", "Approach routes", "Protects workers and food."],
         ],
       },
@@ -1244,20 +1575,52 @@ export const guideBriefs: GuideBrief[] = [
         title: "Layout Fix Table",
         columns: ["Symptom", "Likely layout issue", "Fix first"],
         rows: [
-          ["Crafting feels slow", "Storage is too far from workstations", "Move material storage closer to the production core."],
-          ["Food keeps interrupting trips", "Farms or food storage are poorly placed", "Protect a smaller farm and shorten food routes."],
-          ["Night defense feels chaotic", "Workers and farms are spread across exposed edges", "Pull key jobs back toward a defended core."],
-          ["Co-op players duplicate work", "Shared zones are not obvious", "Create clear storage, farming, building, and scouting zones."],
+          [
+            "Crafting feels slow",
+            "Storage is too far from workstations",
+            "Move material storage closer to the production core.",
+          ],
+          [
+            "Food keeps interrupting trips",
+            "Farms or food storage are poorly placed",
+            "Protect a smaller farm and shorten food routes.",
+          ],
+          [
+            "Night defense feels chaotic",
+            "Workers and farms are spread across exposed edges",
+            "Pull key jobs back toward a defended core.",
+          ],
+          [
+            "Co-op players duplicate work",
+            "Shared zones are not obvious",
+            "Create clear storage, farming, building, and scouting zones.",
+          ],
         ],
       },
       {
         title: "Layout Decision Router",
         columns: ["Your current goal", "Layout priority", "Avoid"],
         rows: [
-          ["First safe night", "Small defended core", "Wide decorative builds."],
-          ["Faster crafting", "Storage beside workstations", "Putting every material in a distant warehouse."],
-          ["Stable food", "Protected farm edge with short routes", "Huge fields that workers cannot service."],
-          ["Co-op expansion", "Named zones for food, building, scouting, and defense", "Eight players making eight base plans."],
+          [
+            "First safe night",
+            "Small defended core",
+            "Wide decorative builds.",
+          ],
+          [
+            "Faster crafting",
+            "Storage beside workstations",
+            "Putting every material in a distant warehouse.",
+          ],
+          [
+            "Stable food",
+            "Protected farm edge with short routes",
+            "Huge fields that workers cannot service.",
+          ],
+          [
+            "Co-op expansion",
+            "Named zones for food, building, scouting, and defense",
+            "Eight players making eight base plans.",
+          ],
         ],
       },
     ],
@@ -1270,7 +1633,7 @@ export const guideBriefs: GuideBrief[] = [
       {
         question: "Is this the final best layout?",
         answer:
-          "No. Treat it as launch-window guidance until late-game testing confirms stronger layouts.",
+          "No. Treat it as current-build guidance until late-game testing confirms stronger layouts.",
       },
       {
         question: "Should I rebuild my base later?",
@@ -1306,7 +1669,8 @@ export const guideBriefs: GuideBrief[] = [
     updateCaution:
       "Do not list exact best survivor jobs until role mechanics are verified in-game.",
     image: "/images/romestead/screenshot-10.webp",
-    imageAlt: "Romestead official screenshot showing survivors and settlement work",
+    imageAlt:
+      "Romestead official screenshot showing survivors and settlement work",
     imageCaption:
       "Survivors are valuable when they reduce repeated settlement work and make food, crafting, defense, or exploration easier.",
     actionSteps: [
@@ -1318,40 +1682,33 @@ export const guideBriefs: GuideBrief[] = [
     sections: [
       {
         heading: "How to Think About Survivors",
-        body:
-          "Every survivor should answer a settlement need. If food is weak, prioritize food support. If nights are dangerous, prioritize defense and repair support.",
+        body: "Every survivor should answer a settlement need. If food is weak, prioritize food support. If nights are dangerous, prioritize defense and repair support.",
       },
       {
         heading: "Role Planning",
-        body:
-          "Group roles by recurring tasks: gatherers, farmers, crafters, defenders, and explorers. Keep backups for jobs that become bottlenecks.",
+        body: "Group roles by recurring tasks: gatherers, farmers, crafters, defenders, and explorers. Keep backups for jobs that become bottlenecks.",
       },
       {
         heading: "Survivors and Food",
-        body:
-          "Food is the first test of a growing settlement. If every new survivor increases pressure faster than farming can support it, recruitment becomes a problem instead of a solution.",
+        body: "Food is the first test of a growing settlement. If every new survivor increases pressure faster than farming can support it, recruitment becomes a problem instead of a solution.",
       },
       {
         heading: "Survivors and Defense",
-        body:
-          "A larger workforce can help defend the town, but only if the base is built so workers are not spread across exposed edges during night pressure.",
+        body: "A larger workforce can help defend the town, but only if the base is built so workers are not spread across exposed edges during night pressure.",
       },
       {
         heading: "Survivors and Resource Automation",
-        body:
-          "The wiki notes that many resources can be automated by constructing the matching building, assigning a worker, and moving output through logistics into storage. That makes survivor placement part of your resource plan, not a separate system.",
+        body: "The wiki notes that many resources can be automated by constructing the matching building, assigning a worker, and moving output through logistics into storage. That makes survivor placement part of your resource plan, not a separate system.",
         links: ["base-building", "farming"],
       },
       {
         heading: "When More Workers Become a Problem",
-        body:
-          "More workers can create more food demand, longer paths, and messier storage. Recruit or assign survivors when they solve a specific bottleneck, then check whether the town can feed and protect them.",
+        body: "More workers can create more food demand, longer paths, and messier storage. Recruit or assign survivors when they solve a specific bottleneck, then check whether the town can feed and protect them.",
         links: ["farming", "multiplayer-coop"],
       },
       {
         heading: "Recruitment Should Follow Bottlenecks",
-        body:
-          "Do not recruit only because a survivor is available. First name the bottleneck: food, hauling, crafting, defense, or exploration recovery. Then assign or recruit around that bottleneck and check whether the town can feed the extra worker.",
+        body: "Do not recruit only because a survivor is available. First name the bottleneck: food, hauling, crafting, defense, or exploration recovery. Then assign or recruit around that bottleneck and check whether the town can feed the extra worker.",
         bullets: [
           "Food bottleneck: support farming and storage routes first.",
           "Material bottleneck: support gathering, cart movement, or automation buildings.",
@@ -1361,13 +1718,11 @@ export const guideBriefs: GuideBrief[] = [
       },
       {
         heading: "Good Worker Planning Feels Boring",
-        body:
-          "If workers are doing their job well, the base feels less dramatic: fewer emergency food runs, fewer missing materials, fewer half-built stations, and less confusion about what the next session should fix.",
+        body: "If workers are doing their job well, the base feels less dramatic: fewer emergency food runs, fewer missing materials, fewer half-built stations, and less confusion about what the next session should fix.",
       },
       {
         heading: "How to Review Workers After Each Expansion",
-        body:
-          "Every expansion changes the value of workers. After adding farms, new stations, automation buildings, or a wider defense route, pause and ask whether workers still solve the main bottleneck. A role that was useful in the first hour can become weak when the base layout changes.",
+        body: "Every expansion changes the value of workers. After adding farms, new stations, automation buildings, or a wider defense route, pause and ask whether workers still solve the main bottleneck. A role that was useful in the first hour can become weak when the base layout changes.",
         links: ["base-building", "best-base-layout"],
       },
     ],
@@ -1376,31 +1731,75 @@ export const guideBriefs: GuideBrief[] = [
         title: "Survivor Role Planning",
         columns: ["Role", "Best use", "Warning"],
         rows: [
-          ["Gatherer", "Feeds early crafting loops", "Can overextend if paths are unsafe."],
+          [
+            "Gatherer",
+            "Feeds early crafting loops",
+            "Can overextend if paths are unsafe.",
+          ],
           ["Farmer", "Stabilizes food", "Needs protected production space."],
           ["Crafter", "Supports upgrades", "Depends on organized storage."],
-          ["Defender", "Protects night routines", "Needs gear and positioning."],
+          [
+            "Defender",
+            "Protects night routines",
+            "Needs gear and positioning.",
+          ],
         ],
       },
       {
         title: "Worker Assignment Checks",
         columns: ["If the town problem is", "Assign toward", "Check next"],
         rows: [
-          ["Stone or lumber shortage", "Quarry or lumber work", "Can storage receive the output?"],
-          ["Food shortage", "Farming and food movement", "Are farms protected and near storage?"],
-          ["Crafting delay", "Material movement and workstation support", "Are resources scattered across the base?"],
-          ["Night losses", "Defense and repair support", "Are workers spread too far apart?"],
-          ["Co-op confusion", "Clear shared jobs", "Does every player know where supplies belong?"],
+          [
+            "Stone or lumber shortage",
+            "Quarry or lumber work",
+            "Can storage receive the output?",
+          ],
+          [
+            "Food shortage",
+            "Farming and food movement",
+            "Are farms protected and near storage?",
+          ],
+          [
+            "Crafting delay",
+            "Material movement and workstation support",
+            "Are resources scattered across the base?",
+          ],
+          [
+            "Night losses",
+            "Defense and repair support",
+            "Are workers spread too far apart?",
+          ],
+          [
+            "Co-op confusion",
+            "Clear shared jobs",
+            "Does every player know where supplies belong?",
+          ],
         ],
       },
       {
         title: "Survivor Review Table",
         columns: ["After you add", "Review this worker need", "Warning sign"],
         rows: [
-          ["More farms", "Food movement and storage support", "Harvests pile up or food is far from workers."],
-          ["More workstations", "Material hauling and crafting support", "Buildings wait on resources that already exist elsewhere."],
-          ["More defenses", "Repair, patrol, or night response coverage", "Workers are too far away when pressure starts."],
-          ["More co-op players", "Clear task ownership", "Players and workers duplicate the same chores."],
+          [
+            "More farms",
+            "Food movement and storage support",
+            "Harvests pile up or food is far from workers.",
+          ],
+          [
+            "More workstations",
+            "Material hauling and crafting support",
+            "Buildings wait on resources that already exist elsewhere.",
+          ],
+          [
+            "More defenses",
+            "Repair, patrol, or night response coverage",
+            "Workers are too far away when pressure starts.",
+          ],
+          [
+            "More co-op players",
+            "Clear task ownership",
+            "Players and workers duplicate the same chores.",
+          ],
         ],
       },
     ],
@@ -1421,7 +1820,12 @@ export const guideBriefs: GuideBrief[] = [
           "Treat best jobs as unconfirmed until launch testing shows exact role value and bottlenecks.",
       },
     ],
-    relatedSlugs: ["beginner-guide", "base-building", "farming", "multiplayer-coop"],
+    relatedSlugs: [
+      "beginner-guide",
+      "base-building",
+      "farming",
+      "multiplayer-coop",
+    ],
   },
   {
     slug: "farming",
@@ -1449,7 +1853,8 @@ export const guideBriefs: GuideBrief[] = [
     updateCaution:
       "Exact crop yields, animal values, and best food sources need in-game confirmation.",
     image: "/images/romestead/screenshot-11.webp",
-    imageAlt: "Romestead official screenshot showing crops, farmland, and settlement food planning",
+    imageAlt:
+      "Romestead official screenshot showing crops, farmland, and settlement food planning",
     imageCaption:
       "Food production is a base system, not an isolated activity; farms should support workers, storage, co-op groups, and exploration.",
     actionSteps: [
@@ -1461,40 +1866,33 @@ export const guideBriefs: GuideBrief[] = [
     sections: [
       {
         heading: "Early Farming Priorities",
-        body:
-          "Start with manageable food production. A smaller protected farm is better than a huge field that pulls workers too far from storage and defense.",
+        body: "Start with manageable food production. A smaller protected farm is better than a huge field that pulls workers too far from storage and defense.",
       },
       {
         heading: "Food Storage and Movement",
-        body:
-          "Place food production where workers can reach storage quickly. The stronger the food loop, the easier it is to support exploration and co-op expansion.",
+        body: "Place food production where workers can reach storage quickly. The stronger the food loop, the easier it is to support exploration and co-op expansion.",
       },
       {
         heading: "Farming and Base Layout",
-        body:
-          "Good farms are not just large fields. They need short routes, nearby storage, and protected access so workers can keep producing while the rest of the town grows.",
+        body: "Good farms are not just large fields. They need short routes, nearby storage, and protected access so workers can keep producing while the rest of the town grows.",
       },
       {
         heading: "Farming and Exploration",
-        body:
-          "A stable food loop lets players spend more time in biomes and dungeons. If food is unstable, exploration turns into a recovery problem after every risky trip.",
+        body: "A stable food loop lets players spend more time in biomes and dungeons. If food is unstable, exploration turns into a recovery problem after every risky trip.",
       },
       {
         heading: "Farming as a Resource Loop",
-        body:
-          "Treat farming like town infrastructure. Food supports workers, workers support gathering and crafting, and crafting supports better tools, defense, and exploration. If one part breaks, the whole settlement slows down.",
+        body: "Treat farming like town infrastructure. Food supports workers, workers support gathering and crafting, and crafting supports better tools, defense, and exploration. If one part breaks, the whole settlement slows down.",
         links: ["survivors", "base-building"],
       },
       {
         heading: "When to Expand Food Production",
-        body:
-          "Expand farms when storage, worker routes, and defense are already working. A larger field is only better if the town can harvest, store, and protect it without pulling everyone away from other jobs.",
+        body: "Expand farms when storage, worker routes, and defense are already working. A larger field is only better if the town can harvest, store, and protect it without pulling everyone away from other jobs.",
         links: ["best-base-layout", "multiplayer-coop"],
       },
       {
         heading: "Food Buffer Before Adventure",
-        body:
-          "Before pushing deeper into biomes or dungeons, build a food buffer that lets the town recover from a bad trip. A farm is not just a food source; it is permission to spend time away from the base without every mistake becoming a restart.",
+        body: "Before pushing deeper into biomes or dungeons, build a food buffer that lets the town recover from a bad trip. A farm is not just a food source; it is permission to spend time away from the base without every mistake becoming a restart.",
         bullets: [
           "Keep early farms close enough to storage for repeated harvests.",
           "Protect food paths before expanding field size.",
@@ -1504,13 +1902,11 @@ export const guideBriefs: GuideBrief[] = [
       },
       {
         heading: "How Farming Supports Crafting",
-        body:
-          "Stable food gives workers time to gather, haul, and craft. When food is unstable, every other system slows down because players keep returning to solve hunger instead of building tools, storage, or defenses.",
+        body: "Stable food gives workers time to gather, haul, and craft. When food is unstable, every other system slows down because players keep returning to solve hunger instead of building tools, storage, or defenses.",
       },
       {
         heading: "Farming Should Create Time, Not Chores",
-        body:
-          "A farm is working when it gives players more time to build, scout, and craft. If every session turns into emergency food work, the farm is too small, too exposed, too far from storage, or unsupported by workers. Fix the route before expanding the field.",
+        body: "A farm is working when it gives players more time to build, scout, and craft. If every session turns into emergency food work, the farm is too small, too exposed, too far from storage, or unsupported by workers. Fix the route before expanding the field.",
         links: ["survivors", "base-building"],
       },
     ],
@@ -1522,27 +1918,63 @@ export const guideBriefs: GuideBrief[] = [
           ["Crops", "Stable food supply", "Overexpansion before defense."],
           ["Animals", "Longer-term resource support", "Needs space and care."],
           ["Storage", "Short walking routes", "Scattered storage slows jobs."],
-          ["Defense", "Protect food production", "Unprotected farms can become weak points."],
+          [
+            "Defense",
+            "Protect food production",
+            "Unprotected farms can become weak points.",
+          ],
         ],
       },
       {
         title: "Food Loop Decisions",
         columns: ["Question", "Best early answer", "Related guide"],
         rows: [
-          ["Should I farm before exploring?", "Yes, build a small food buffer before risky trips.", "Beginner Guide"],
-          ["Where should farms go?", "Near storage and protected paths, not isolated corners.", "Base Building"],
-          ["When do survivors help farming?", "When food chores are repeating and storage routes are short.", "Survivors"],
-          ["Should co-op groups overbuild farms?", "No, assign one food lead and expand only when the group consumes the buffer.", "Multiplayer Co-op"],
+          [
+            "Should I farm before exploring?",
+            "Yes, build a small food buffer before risky trips.",
+            "Beginner Guide",
+          ],
+          [
+            "Where should farms go?",
+            "Near storage and protected paths, not isolated corners.",
+            "Base Building",
+          ],
+          [
+            "When do survivors help farming?",
+            "When food chores are repeating and storage routes are short.",
+            "Survivors",
+          ],
+          [
+            "Should co-op groups overbuild farms?",
+            "No, assign one food lead and expand only when the group consumes the buffer.",
+            "Multiplayer Co-op",
+          ],
         ],
       },
       {
         title: "Farming Problem Solver",
         columns: ["Problem", "Likely cause", "Fix first"],
         rows: [
-          ["Food runs out during trips", "No buffer before exploration", "Pause scouting and build a small reserve."],
-          ["Farms feel like busywork", "Fields are too far from storage or workers", "Move food routes closer before adding more plots."],
-          ["Workers do not help enough", "Food demand grew faster than support roles", "Review survivor assignments and food storage."],
-          ["Co-op drains food fast", "Too many players leave town at once", "Keep one food lead and one base player active."],
+          [
+            "Food runs out during trips",
+            "No buffer before exploration",
+            "Pause scouting and build a small reserve.",
+          ],
+          [
+            "Farms feel like busywork",
+            "Fields are too far from storage or workers",
+            "Move food routes closer before adding more plots.",
+          ],
+          [
+            "Workers do not help enough",
+            "Food demand grew faster than support roles",
+            "Review survivor assignments and food storage.",
+          ],
+          [
+            "Co-op drains food fast",
+            "Too many players leave town at once",
+            "Keep one food lead and one base player active.",
+          ],
         ],
       },
     ],
@@ -1563,7 +1995,12 @@ export const guideBriefs: GuideBrief[] = [
           "Best crop claims need launch testing because yields and balance can change during Early Access.",
       },
     ],
-    relatedSlugs: ["base-building", "best-base-layout", "survivors", "beginner-guide"],
+    relatedSlugs: [
+      "base-building",
+      "best-base-layout",
+      "survivors",
+      "beginner-guide",
+    ],
   },
   {
     slug: "gods-blessings",
@@ -1591,7 +2028,8 @@ export const guideBriefs: GuideBrief[] = [
     updateCaution:
       "Do not publish final tier lists until effects, scaling, and patch changes are verified.",
     image: "/images/romestead/screenshot-12.webp",
-    imageAlt: "Romestead official screenshot for Roman gods blessings and adventure planning",
+    imageAlt:
+      "Romestead official screenshot for Roman gods blessings and adventure planning",
     imageCaption:
       "Blessing advice should stay tied to real settlement problems: food pressure, defense, crafting speed, exploration risk, or combat difficulty.",
     actionSteps: [
@@ -1603,28 +2041,23 @@ export const guideBriefs: GuideBrief[] = [
     sections: [
       {
         heading: "How to Choose Blessings",
-        body:
-          "Match blessings to the problem in front of you. A settlement struggling with food needs different support than a group pushing dungeons or defending a wider base.",
+        body: "Match blessings to the problem in front of you. A settlement struggling with food needs different support than a group pushing dungeons or defending a wider base.",
       },
       {
         heading: "Avoid Early Tier List Traps",
-        body:
-          "A blessing can look powerful in the first hour and fall off later. Keep notes on what it changes before calling it best.",
+        body: "A blessing can look powerful in the first hour and fall off later. Keep notes on what it changes before calling it best.",
       },
       {
         heading: "Blessings and Settlement Problems",
-        body:
-          "The safest way to choose a blessing is to name the problem first. Food pressure, weak defense, slow crafting, or dungeon risk should point you toward different support.",
+        body: "The safest way to choose a blessing is to name the problem first. Food pressure, weak defense, slow crafting, or dungeon risk should point you toward different support.",
       },
       {
         heading: "When to Reevaluate a Blessing",
-        body:
-          "Reevaluate after major patches, after the settlement expands, and after your group starts pushing dungeons. A blessing that helps a small base may not be the best answer later.",
+        body: "Reevaluate after major patches, after the settlement expands, and after your group starts pushing dungeons. A blessing that helps a small base may not be the best answer later.",
       },
       {
         heading: "Problem-First Blessing Choice",
-        body:
-          "Before choosing a god or blessing, write down the problem you are solving. Food pressure, night danger, slow crafting, and risky exploration are different problems. A blessing that helps one may do little for another.",
+        body: "Before choosing a god or blessing, write down the problem you are solving. Food pressure, night danger, slow crafting, and risky exploration are different problems. A blessing that helps one may do little for another.",
         bullets: [
           "Food problem: look for support that stabilizes growth or farming.",
           "Defense problem: value survival, repair, or safer night routines.",
@@ -1634,13 +2067,11 @@ export const guideBriefs: GuideBrief[] = [
       },
       {
         heading: "When a Blessing Is Actually Good",
-        body:
-          "A blessing is good when it changes your next few decisions in a useful way. If it only sounds powerful but does not reduce a bottleneck, save the claim until more testing proves its value.",
+        body: "A blessing is good when it changes your next few decisions in a useful way. If it only sounds powerful but does not reduce a bottleneck, save the claim until more testing proves its value.",
       },
       {
         heading: "How to Test a Blessing Without Wasting a Run",
-        body:
-          "Test blessings against one problem at a time. If you change your base layout, worker roles, weapon plan, and blessing all at once, you will not know what helped. Keep the settlement route stable, then judge whether the blessing reduced the pressure you picked it for.",
+        body: "Test blessings against one problem at a time. If you change your base layout, worker roles, weapon plan, and blessing all at once, you will not know what helped. Keep the settlement route stable, then judge whether the blessing reduced the pressure you picked it for.",
         bullets: [
           "Choose one problem before taking the blessing.",
           "Keep food, base layout, and worker roles mostly stable during the test.",
@@ -1655,30 +2086,74 @@ export const guideBriefs: GuideBrief[] = [
         title: "Blessing Decision Framework",
         columns: ["Settlement problem", "Blessing direction", "Why"],
         rows: [
-          ["Food pressure", "Growth or farming support", "Stabilizes survivors and expansion."],
-          ["Night danger", "Defense or survival support", "Protects the settlement core."],
+          [
+            "Food pressure",
+            "Growth or farming support",
+            "Stabilizes survivors and expansion.",
+          ],
+          [
+            "Night danger",
+            "Defense or survival support",
+            "Protects the settlement core.",
+          ],
           ["Slow crafting", "Production support", "Improves upgrade pacing."],
-          ["Dungeon push", "Combat or exploration support", "Helps risky trips outside the base."],
+          [
+            "Dungeon push",
+            "Combat or exploration support",
+            "Helps risky trips outside the base.",
+          ],
         ],
       },
       {
         title: "What Not to Claim Yet",
         columns: ["Claim", "Why to avoid it", "Safer wording"],
         rows: [
-          ["Best god", "Effects, scaling, and patch balance need testing.", "Pick the god that solves your current problem."],
-          ["Best blessing", "A strong early blessing may fall off later.", "Treat blessings as launch-window build direction."],
-          ["Final tier list", "Early Access systems can change quickly.", "Use tier lists as notes, not rules."],
-          ["One correct build", "Solo, co-op, farming, and combat needs differ.", "Match the blessing to the settlement bottleneck."],
+          [
+            "Best god",
+            "Effects, scaling, and patch balance need testing.",
+            "Pick the god that solves your current problem.",
+          ],
+          [
+            "Best blessing",
+            "A strong early blessing may fall off later.",
+            "Treat blessings as current-build direction.",
+          ],
+          [
+            "Final tier list",
+            "Early Access systems can change quickly.",
+            "Use tier lists as notes, not rules.",
+          ],
+          [
+            "One correct build",
+            "Solo, co-op, farming, and combat needs differ.",
+            "Match the blessing to the settlement bottleneck.",
+          ],
         ],
       },
       {
         title: "Blessing Test Log",
         columns: ["Before choosing", "During the test", "Keep it if"],
         rows: [
-          ["Name the bottleneck: food, defense, crafting, or combat.", "Run the same settlement route for a short session.", "The bottleneck appears less often without creating a worse one."],
-          ["Avoid changing several major systems at once.", "Watch whether the blessing affects real decisions.", "You can explain what changed in one sentence."],
-          ["Check whether the group or solo route changes the value.", "Retest after a patch or larger base expansion.", "It still helps after the town grows."],
-          ["Do not start with a tier-list claim.", "Compare against the problem you actually had.", "It supports your build better than a generic pick."],
+          [
+            "Name the bottleneck: food, defense, crafting, or combat.",
+            "Run the same settlement route for a short session.",
+            "The bottleneck appears less often without creating a worse one.",
+          ],
+          [
+            "Avoid changing several major systems at once.",
+            "Watch whether the blessing affects real decisions.",
+            "You can explain what changed in one sentence.",
+          ],
+          [
+            "Check whether the group or solo route changes the value.",
+            "Retest after a patch or larger base expansion.",
+            "It still helps after the town grows.",
+          ],
+          [
+            "Do not start with a tier-list claim.",
+            "Compare against the problem you actually had.",
+            "It supports your build better than a generic pick.",
+          ],
         ],
       },
     ],
