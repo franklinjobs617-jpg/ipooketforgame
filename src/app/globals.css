@@ -392,7 +392,7 @@ h3 {
 
 .planner-tabs {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 10px;
   margin-bottom: 18px;
 }
@@ -425,11 +425,32 @@ h3 {
 
 .planner-summary,
 .planner-steps,
-.planner-links {
+.planner-links,
+.returning-player,
+.build-radar {
   border: 2px solid #171717;
   border-radius: 12px;
   background: #fffaf0;
   box-shadow: 2px 2px 0 #0a0a0d;
+}
+
+.returning-player {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 18px;
+  background: #fef3c8;
+}
+
+.returning-player p:not(.eyebrow),
+.build-radar p {
+  margin: 0;
+  color: #2d2a23;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.45;
 }
 
 .planner-summary {
@@ -533,6 +554,54 @@ h3 {
   padding: 8px 14px;
   font-size: 13px;
   font-weight: 900;
+}
+
+.planner-card > .action-checklist,
+.build-radar {
+  grid-column: 1 / -1;
+}
+
+.build-radar {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.5fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  margin-top: 18px;
+  padding: 18px;
+  background: #fff4d6;
+}
+
+.build-radar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.build-radar-grid a {
+  display: grid;
+  gap: 8px;
+  min-height: 108px;
+  border: 2px solid #171717;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 2px 2px 0 #0a0a0d;
+  padding: 13px;
+}
+
+.build-radar-grid span {
+  width: fit-content;
+  border: 1px solid #171717;
+  border-radius: 100px;
+  background: #d2fae5;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.build-radar-grid strong {
+  color: #171717;
+  font-size: 13px;
+  line-height: 1.3;
 }
 
 .visual-routes {
@@ -826,7 +895,104 @@ h3 {
   box-shadow: var(--shadow-pixel);
 }
 
-.article-body ul {
+.action-checklist {
+  display: grid;
+  gap: 14px;
+  border: 2px solid #171717;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 2px 2px 0 #0a0a0d;
+  padding: 18px;
+}
+
+.action-checklist-compact {
+  margin-top: 16px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.checklist-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.checklist-heading h3 {
+  font-size: 18px;
+}
+
+.checklist-heading span {
+  display: grid;
+  min-width: 48px;
+  min-height: 32px;
+  place-items: center;
+  border: 2px solid #171717;
+  border-radius: 100px;
+  background: #fbbf25;
+  color: #000;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.checklist-steps {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checklist-steps li {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  border: 2px solid #171717;
+  border-radius: 8px;
+  background: #fffaf0;
+  padding: 12px;
+}
+
+.checklist-steps input {
+  width: 22px;
+  height: 22px;
+  margin: 1px 0 0;
+  accent-color: #8fd14f;
+}
+
+.checklist-steps label {
+  color: #2d2a23;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.checklist-steps input:checked + label {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.checklist-clear {
+  width: fit-content;
+  min-height: 38px;
+  border: 2px solid #171717;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 2px 2px 0 #0a0a0d;
+  color: #171717;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 8px 12px;
+}
+
+.checklist-clear:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.article-body section > ul {
   display: grid;
   gap: 10px;
   margin: 18px 0 0;
@@ -835,7 +1001,7 @@ h3 {
   list-style: none;
 }
 
-.article-body li {
+.article-body section > ul > li {
   position: relative;
   border: 2px solid #171717;
   border-radius: 8px;
@@ -845,7 +1011,7 @@ h3 {
   line-height: 1.45;
 }
 
-.article-body li::before {
+.article-body section > ul > li::before {
   position: absolute;
   top: 12px;
   left: 14px;
@@ -947,7 +1113,7 @@ h3 {
   background: #d2fae5;
 }
 
-.action-steps ol {
+.action-steps > ol {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
@@ -957,7 +1123,7 @@ h3 {
   counter-reset: step;
 }
 
-.action-steps li {
+.action-steps > ol > li {
   counter-increment: step;
   border: 2px solid #171717;
   border-radius: 8px;
@@ -969,7 +1135,7 @@ h3 {
   line-height: 1.45;
 }
 
-.action-steps li::before {
+.action-steps > ol > li::before {
   display: grid;
   width: 30px;
   height: 30px;
@@ -1235,6 +1401,8 @@ tr:last-child td {
   .fast-answer,
   .video-panel,
   .planner-card,
+  .returning-player,
+  .build-radar,
   .section-heading-row,
   .footer-grid {
     grid-template-columns: 1fr;
@@ -1269,7 +1437,8 @@ tr:last-child td {
   .guide-card-grid,
   .source-panel-grid,
   .visual-route-grid,
-  .action-steps ol {
+  .build-radar-grid,
+  .action-steps > ol {
     grid-template-columns: 1fr;
   }
 
@@ -1343,6 +1512,12 @@ tr:last-child td {
 
   .settlement-planner {
     padding: 18px;
+  }
+
+  .build-radar,
+  .returning-player,
+  .action-checklist {
+    padding: 14px;
   }
 
   .wiki-description {

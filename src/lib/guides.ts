@@ -11,6 +11,14 @@ export interface TableBlock {
   rows: string[][];
 }
 
+export interface GuideSection {
+  heading: string;
+  body: string;
+  steps: string[];
+  bullets?: string[];
+  links?: string[];
+}
+
 export interface GuideBrief {
   slug: string;
   primaryKeyword: string;
@@ -29,20 +37,23 @@ export interface GuideBrief {
   imageAlt: string;
   imageCaption: string;
   actionSteps: string[];
-  sections: {
-    heading: string;
-    body: string;
-    bullets?: string[];
-    links?: string[];
-  }[];
+  sections: GuideSection[];
   tables: TableBlock[];
   faqs: FaqItem[];
   relatedSlugs: string[];
 }
 
+type GuideSectionDraft = Omit<GuideSection, "steps"> & {
+  steps?: string[];
+};
+
+type GuideBriefDraft = Omit<GuideBrief, "sections"> & {
+  sections: GuideSectionDraft[];
+};
+
 const updatedAt = "2026-05-28";
 
-export const guideBriefs: GuideBrief[] = [
+const guideDrafts: GuideBriefDraft[] = [
   {
     slug: "",
     primaryKeyword: "Romestead guide",
@@ -429,7 +440,7 @@ export const guideBriefs: GuideBrief[] = [
         body: "Start close to home. Collect basic materials, identify food sources, build the first useful stations, and keep your settlement readable before adding distant structures.",
         bullets: [
           "Gather wood, stone, and food before long exploration.",
-          "Build stations that unlock storage, tools, and cooking.",
+          "Build stations that open storage, tools, and cooking.",
           "Keep early buildings close enough to defend.",
           "Use survivors to reduce repeated chores.",
         ],
@@ -2177,6 +2188,176 @@ export const guideBriefs: GuideBrief[] = [
     relatedSlugs: ["beginner-guide", "survivors", "farming", "base-building"],
   },
 ];
+
+const defaultSectionStepsBySlug: Record<string, string[]> = {
+  home: [
+    "Pick the player problem that matches your current save.",
+    "Open the linked guide and complete its checklist before changing another system.",
+    "Return to this hub after one short session to choose the next bottleneck.",
+  ],
+  "release-date": [
+    "Check the Steam page for the current build, price, reviews, and supported features.",
+    "Read the newest official news or hotfix note before starting a long save.",
+    "Treat console, Deck, roadmap, and final 1.0 claims as separate verification items.",
+  ],
+  "beginner-guide": [
+    "Run one short save focused on nearby food, storage, and core workstations.",
+    "Stop after the first major bottleneck and name it before expanding.",
+    "Use the linked next guide only after the first compact base works.",
+  ],
+  "multiplayer-coop": [
+    "Test host, save, reconnect, and shared storage before creating the serious world.",
+    "Assign one player to food, one to building, and one to scouting before anyone wanders.",
+    "Retest group flow after a hotfix or when the base grows wider.",
+  ],
+  "system-requirements": [
+    "Test the current build for 15 minutes before committing to a long save.",
+    "Change one performance setting at a time and write down whether it helped.",
+    "Recheck FPS, micro-stutter, and input comfort after patches or larger settlements.",
+  ],
+  "steam-deck": [
+    "Test menus, building placement, item movement, combat, and suspend behavior.",
+    "Use a short refund-window session before treating Deck as your main platform.",
+    "Recheck compatibility labels and player reports after major updates.",
+  ],
+  "is-it-worth-it": [
+    "Compare your play style against co-op, base planning, farming, and Early Access risk.",
+    "Run a short current-build test if performance, controls, or camera comfort matters.",
+    "Wait for patches or 1.0 if you need stable late-game data and final balance.",
+  ],
+  "base-building": [
+    "Move storage, workstations, and food routes closer before expanding the base.",
+    "Fix one pathing or defense problem before adding decorative buildings.",
+    "Retest worker movement after each new farm, wall, or workstation cluster.",
+  ],
+  "best-base-layout": [
+    "Start with a compact hub and leave space for future recipes and worker paths.",
+    "Protect farms and likely approach routes before widening the settlement.",
+    "Rebuild only when storage, food, defense, or co-op zones repeatedly slow the save.",
+  ],
+  survivors: [
+    "Assign workers around the shortage that appears twice in one session.",
+    "Cancel or change work only after checking whether storage and routes are the real issue.",
+    "Review Carpenter, farming, hauling, and defense needs after each expansion.",
+  ],
+  farming: [
+    "Keep farms, wells, and food storage close enough for repeated worker trips.",
+    "Use NPC farming help only after the town can cover the added food demand.",
+    "Expand food production after storage, defense, and worker routes are stable.",
+  ],
+  "gods-blessings": [
+    "Choose one problem before picking a god, blessing, weapon, or trinket.",
+    "Keep the rest of the route stable while testing whether the choice helped.",
+    "Retest after patches instead of turning one run into a final tier list.",
+  ],
+};
+
+const sectionStepOverrides: Record<string, string[]> = {
+  "release-date:Current Release Status": [
+    "Open Steam and confirm Romestead is installable in your region.",
+    "Check the current review mix and the latest official announcement date.",
+    "Use this page again after hotfixes, because launch-build behavior can change quickly.",
+  ],
+  "release-date:Launch Build Checklist": [
+    "Verify purchase/install status, build notes, and current known issues.",
+    "Start a short solo test before hosting a co-op world.",
+    "Check controller, FPS, micro-stutter, save, and reconnect behavior before a long session.",
+  ],
+  "release-date:What to Do After Installing": [
+    "Create a temporary save and test graphics, input, storage, and one night cycle.",
+    "If playing with friends, test host-save and reconnect before assigning long-term roles.",
+    "Bookmark the roadmap or news page so you know when to revisit changed systems.",
+  ],
+  "system-requirements:What to Test First": [
+    "Run the game at your native resolution and note baseline FPS.",
+    "Move through building, storage, farming, and combat instead of only testing the menu.",
+    "If stutter appears, verify files and test high-performance GPU mode before changing many settings.",
+  ],
+  "system-requirements:Performance Habits": [
+    "Keep one settings change per test so the result is attributable.",
+    "Check refresh rate, VSync/window mode, and GPU selection before blaming the save.",
+    "Retest after hotfixes because current-build performance reports can age quickly.",
+  ],
+  "multiplayer-coop:Co-op Risks to Test": [
+    "Have every player join, leave, and reconnect before the real world starts.",
+    "Test host-save behavior with a small build and shared storage.",
+    "Use LAN only after the group confirms Steam online co-op is not the better fit.",
+  ],
+  "multiplayer-coop:How to Stop Co-op Chaos": [
+    "Assign one food lead, one builder, one storage keeper, and one scout.",
+    "Name shared chests or zones by purpose before resources scatter.",
+    "Pause exploration until the group has one defended core and a food buffer.",
+  ],
+  "base-building:Compact First Base": [
+    "Place central storage first, then add workstations around it.",
+    "Keep farms and return paths inside a defendable footprint.",
+    "Delay decorative or distant buildings until the first night and resource loop are stable.",
+  ],
+  "base-building:Build Around the Cart Route": [
+    "Identify the repeated path between storage, workstations, farms, and exploration return.",
+    "Move the highest-use stations closer before expanding walls.",
+    "Retest worker and player travel after every new production zone.",
+  ],
+  "best-base-layout:Practical Blueprint Without Exact Tiles": [
+    "Build a central storage core with nearby food and repair access.",
+    "Put farms on protected edges, not isolated corners.",
+    "Reserve expansion lanes for future recipes, walls, raids, and worker routes.",
+  ],
+  "best-base-layout:How to Adapt the Layout After Patches": [
+    "Read patch notes for recipe, worker, enemy, wall, or raid changes.",
+    "Fix the first route that becomes painful: storage, food, defense, crafting, or exploration.",
+    "Avoid rebuilding the whole town until the same bottleneck repeats.",
+  ],
+  "survivors:Survivors and Resource Automation": [
+    "Check whether the shortage is worker assignment, storage distance, or missing workstation support.",
+    "Use repeating orders only for a stable material loop.",
+    "Review Carpenter and hauling needs before adding another production chain.",
+  ],
+  "survivors:When More Workers Become a Problem": [
+    "Count food demand before recruiting or assigning more workers.",
+    "Cancel or redirect work that is filling storage with low-priority materials.",
+    "Pull workers back toward defended zones if night pressure is causing losses.",
+  ],
+  "farming:Early Farming Priorities": [
+    "Build a small farm close to food storage and water access.",
+    "Check whether NPC watering and well placement actually reduce chores in your save.",
+    "Expand fields only after workers can harvest, store, and defend them.",
+  ],
+  "farming:When to Expand Food Production": [
+    "Look for repeated food shortages before adding more plots.",
+    "Add worker support and storage before increasing farm size.",
+    "Retest the food buffer after co-op players, survivors, or exploration trips increase demand.",
+  ],
+  "gods-blessings:Problem-First Blessing Choice": [
+    "Choose one pressure: food, defense, crafting speed, exploration risk, or combat.",
+    "Take the blessing only after writing down the problem it should solve.",
+    "Compare the next session against the same route before calling it good.",
+  ],
+  "gods-blessings:How to Test a Blessing Without Wasting a Run": [
+    "Keep base layout, worker roles, and weapon plan mostly stable during the test.",
+    "Record one sentence about what changed after the blessing.",
+    "Retest after a patch or larger settlement before publishing a recommendation.",
+  ],
+};
+
+function getSectionSteps(slug: string, section: GuideSectionDraft) {
+  if (section.steps?.length) return section.steps;
+
+  const key = `${slug || "home"}:${section.heading}`;
+  return (
+    sectionStepOverrides[key] ??
+    defaultSectionStepsBySlug[slug || "home"] ??
+    defaultSectionStepsBySlug.home
+  );
+}
+
+export const guideBriefs: GuideBrief[] = guideDrafts.map((guide) => ({
+  ...guide,
+  sections: guide.sections.map((section) => ({
+    ...section,
+    steps: getSectionSteps(guide.slug, section),
+  })),
+}));
 
 export function getGuideBySlug(slug: string) {
   return guideBriefs.find((guide) => guide.slug === slug);

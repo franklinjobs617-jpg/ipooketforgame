@@ -7,6 +7,7 @@ import { ImagePanel } from "@/components/ImagePanel";
 import { PixelHero } from "@/components/PixelHero";
 import { RelatedGuides } from "@/components/RelatedGuides";
 import { WikiCategoryGrid } from "@/components/WikiCategoryGrid";
+import { ActionChecklist } from "@/components/ActionChecklist";
 import { ActionSteps } from "@/components/ActionSteps";
 import { PlayerGoalGrid } from "@/components/PlayerGoalGrid";
 import { SourcePanel } from "@/components/SourcePanel";
@@ -42,6 +43,11 @@ export function GuideArticle({ guide }: { guide: GuideBrief }) {
                 <section key={section.heading}>
                   <h2>{section.heading}</h2>
                   <p>{section.body}</p>
+                  <ActionChecklist
+                    compact
+                    storageKey={getSectionStorageKey(guide.slug, section.heading)}
+                    steps={section.steps}
+                  />
                   {section.bullets ? (
                     <ul>
                       {section.bullets.map((bullet) => (
@@ -192,4 +198,11 @@ function getPlayerCopy(slug: string) {
   };
 
   return copyBySlug[slug] ?? defaultCopy;
+}
+
+function getSectionStorageKey(slug: string, heading: string) {
+  const pageKey = slug || "home";
+  const sectionKey = heading.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+  return `section:${pageKey}:${sectionKey}`;
 }

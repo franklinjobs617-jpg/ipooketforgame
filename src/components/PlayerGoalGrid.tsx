@@ -12,6 +12,11 @@ const playerGoals = [
     action: "Split gathering, building, food, scouting, and defense roles.",
   },
   {
+    label: "FPS or controls feel rough",
+    href: "/system-requirements",
+    action: "Test the current build, controller comfort, FPS, and micro-stutter.",
+  },
+  {
     label: "My base is messy",
     href: "/base-building",
     action: "Rebuild around storage, workstations, farms, and short paths.",
@@ -19,7 +24,12 @@ const playerGoals = [
   {
     label: "Food is slowing me down",
     href: "/farming",
-    action: "Protect crops, storage, and worker routes before expanding.",
+    action: "Check wells, NPC work, food storage, and worker routes before expanding.",
+  },
+  {
+    label: "Workers feel confused",
+    href: "/survivors",
+    action: "Review assignments, cancel work, Carpenter support, and repeated bottlenecks.",
   },
   {
     label: "I need build direction",

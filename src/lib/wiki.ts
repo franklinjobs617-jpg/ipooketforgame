@@ -81,6 +81,6 @@ export const wikiCategories = [
     href: "/base-building",
     iconSrc: "/images/wiki-icons/crafting.png",
     iconAlt: "Crafting icon from Romestead",
-    description: "Build the workstation chain that unlocks better tools, storage, food, and defense.",
+    description: "Build the workstation chain that opens better tools, storage, food, and defense.",
   },
 ];

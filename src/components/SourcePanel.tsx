@@ -15,10 +15,11 @@ export function SourcePanel() {
           </p>
         </div>
         <div>
-          <h3>Treat Early Access values carefully</h3>
+          <h3>Use community reports as a radar</h3>
           <p>
-            Resource uses, recipes, best blessings, layouts, and job value can change. When a
-            detail needs more testing, the page says so instead of presenting it as final.
+            Controller issues, FPS reports, worker behavior, co-op problems, raids, and roadmap
+            questions can point to useful guide updates, but they stay marked as test-needed
+            until confirmed.
           </p>
         </div>
         <div>
