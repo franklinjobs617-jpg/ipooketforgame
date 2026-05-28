@@ -45,9 +45,13 @@ export function ActionChecklist({
   );
 
   useEffect(() => {
-    const progress = readProgress();
-    setCompletedSteps(progress[storageKey] ?? []);
-    setHasLoaded(true);
+    const frameId = window.requestAnimationFrame(() => {
+      const progress = readProgress();
+      setCompletedSteps(progress[storageKey] ?? []);
+      setHasLoaded(true);
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
   }, [storageKey]);
 
   function persist(nextCompletedSteps: string[]) {

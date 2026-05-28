@@ -28,7 +28,7 @@ export function PixelHero({ guide }: { guide: GuideBrief }) {
           src={guide.image}
           alt={guide.imageAlt}
           fill
-          priority={!guide.slug}
+          priority
           sizes="(max-width: 900px) 100vw, 46vw"
         />
         <div className="hero-art-label">

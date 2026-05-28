@@ -179,11 +179,15 @@ export function SettlementPlanner() {
   );
 
   useEffect(() => {
-    const savedRoute = window.localStorage.getItem(ACTIVE_ROUTE_STORAGE_KEY);
-    if (savedRoute && plannerRoutes.some((route) => route.id === savedRoute)) {
-      setActiveRouteId(savedRoute);
-      setHasSavedRoute(true);
-    }
+    const frameId = window.requestAnimationFrame(() => {
+      const savedRoute = window.localStorage.getItem(ACTIVE_ROUTE_STORAGE_KEY);
+      if (savedRoute && plannerRoutes.some((route) => route.id === savedRoute)) {
+        setActiveRouteId(savedRoute);
+        setHasSavedRoute(true);
+      }
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
   }, []);
 
   function chooseRoute(routeId: string) {
